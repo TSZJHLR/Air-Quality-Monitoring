@@ -1,0 +1,586 @@
+2026-03-03 17:12:41  INFO      SQLite buffer ready  →  aq_buffer.db
+2026-03-03 17:12:41  INFO      MQTT connect attempt 1/6 ...
+2026-03-03 17:12:42  ERROR     MQTT connect failed RC=5: Not authorised
+2026-03-03 17:12:42  WARNING   MQTT disconnected unexpectedly (RC=5)
+2026-03-03 17:12:43  WARNING   Retry in 2s ...
+2026-03-03 17:12:45  INFO      MQTT connect attempt 2/6 ...
+2026-03-03 17:12:46  ERROR     MQTT connect failed RC=5: Not authorised
+2026-03-03 17:12:46  WARNING   MQTT disconnected unexpectedly (RC=5)
+2026-03-03 17:12:47  WARNING   Retry in 4s ...
+2026-03-03 17:12:51  INFO      MQTT connect attempt 3/6 ...
+2026-03-03 17:12:51  ERROR     MQTT connect failed RC=5: Not authorised
+2026-03-03 17:12:51  WARNING   MQTT disconnected unexpectedly (RC=5)
+2026-03-03 17:12:52  WARNING   Retry in 8s ...
+2026-03-03 17:13:00  INFO      MQTT connect attempt 4/6 ...
+2026-03-03 17:13:01  ERROR     MQTT connect failed RC=5: Not authorised
+2026-03-03 17:13:01  WARNING   MQTT disconnected unexpectedly (RC=5)
+2026-03-03 17:13:02  WARNING   Retry in 16s ...
+2026-03-03 17:13:18  INFO      MQTT connect attempt 5/6 ...
+2026-03-03 17:13:19  ERROR     MQTT connect failed RC=5: Not authorised
+2026-03-03 17:13:19  WARNING   MQTT disconnected unexpectedly (RC=5)
+2026-03-03 17:13:20  WARNING   Retry in 32s ...
+2026-03-03 17:14:10  INFO      SQLite buffer ready  →  aq_buffer.db
+2026-03-03 17:14:10  WARNING   paho-mqtt unavailable — HTTP fallback only.
+2026-03-03 17:14:10  WARNING   === ALERT DEMO MODE ===  Sending PM2.5 > 150 continuously.
+2026-03-03 17:14:10  WARNING   Watch for alarms appearing on your ThingsBoard dashboard.
+2026-03-03 17:14:10  INFO      Simulation started. Press Ctrl+C to stop.
+
+2026-03-03 17:14:10  WARNING   MQTT unavailable — trying HTTP fallback ...
+2026-03-03 17:14:11  WARNING   HTTP fallback also failed.
+2026-03-03 17:14:11  WARNING   Reading buffered locally.  Buffer: 1 unsent.
+2026-03-03 17:14:11  INFO      Data Sent: [PM2.5: 246.6 | PM10: 512.6 | Temp: 14.4C | Humidity: 65.4% | CO: 13.94 ppm | AQI: 343 | Hazardous]
+2026-03-03 17:14:16  WARNING   MQTT unavailable — trying HTTP fallback ...
+2026-03-03 17:14:17  WARNING   HTTP fallback also failed.
+2026-03-03 17:14:17  WARNING   Reading buffered locally.  Buffer: 2 unsent.
+2026-03-03 17:14:17  INFO      Data Sent: [PM2.5: 276.7 | PM10: 563.8 | Temp: 12.5C | Humidity: 49.7% | CO: 8.78 ppm | AQI: 403 | Hazardous]
+2026-03-03 17:14:22  WARNING   MQTT unavailable — trying HTTP fallback ...
+2026-03-03 17:14:23  WARNING   HTTP fallback also failed.
+2026-03-03 17:14:23  WARNING   Reading buffered locally.  Buffer: 3 unsent.
+2026-03-03 17:14:23  INFO      Data Sent: [PM2.5: 272.1 | PM10: 570.2 | Temp: 11.5C | Humidity: 59.5% | CO: 15.93 ppm | AQI: 394 | Hazardous]
+2026-03-03 17:14:28  WARNING   MQTT unavailable — trying HTTP fallback ...
+2026-03-03 17:14:29  WARNING   HTTP fallback also failed.
+2026-03-03 17:14:29  WARNING   Reading buffered locally.  Buffer: 4 unsent.
+2026-03-03 17:14:29  INFO      Data Sent: [PM2.5: 227.7 | PM10: 476.4 | Temp: 16.9C | Humidity: 54.7% | CO: 17.66 ppm | AQI: 305 | Hazardous]
+2026-03-03 17:14:34  WARNING   MQTT unavailable — trying HTTP fallback ...
+2026-03-03 17:14:35  WARNING   HTTP fallback also failed.
+2026-03-03 17:14:35  WARNING   Reading buffered locally.  Buffer: 5 unsent.
+2026-03-03 17:14:35  INFO      Data Sent: [PM2.5: 206.4 | PM10: 393.8 | Temp: 7.6C | Humidity: 50.4% | CO: 17.46 ppm | AQI: 281 | Very Unhealthy]
+2026-03-03 17:14:40  WARNING   MQTT unavailable — trying HTTP fallback ...
+2026-03-03 17:14:40  WARNING   HTTP fallback also failed.
+2026-03-03 17:14:40  WARNING   Reading buffered locally.  Buffer: 6 unsent.
+2026-03-03 17:14:40  INFO      Data Sent: [PM2.5: 249.8 | PM10: 488.2 | Temp: 15.5C | Humidity: 55.6% | CO: 16.18 ppm | AQI: 349 | Hazardous]
+2026-03-03 17:14:54  INFO      SQLite buffer ready  →  aq_buffer.db
+2026-03-03 17:14:54  INFO      === OFFLINE BUFFER DEMO ===  MQTT disabled intentionally.
+2026-03-03 17:14:54  INFO      All readings will be stored in SQLite: aq_buffer.db
+2026-03-03 17:14:54  INFO      Reconnect logic will activate after each failed attempt.
+2026-03-03 17:14:54  INFO      Simulation started. Press Ctrl+C to stop.
+
+2026-03-03 17:14:54  WARNING   Reading buffered locally.  Buffer: 7 unsent.
+2026-03-03 17:14:54  INFO      Data Sent: [PM2.5: 131.9 | PM10: 267.5 | Temp: 13.3C | Humidity: 41.9% | CO: 3.36 ppm | AQI: 207 | Very Unhealthy]
+2026-03-03 17:14:59  WARNING   Reading buffered locally.  Buffer: 8 unsent.
+2026-03-03 17:14:59  INFO      Data Sent: [PM2.5: 42.3 | PM10: 92.5 | Temp: 12.4C | Humidity: 30.3% | CO: 5.17 ppm | AQI: 118 | Unhealthy for Sensitive Groups]
+2026-03-03 17:15:04  WARNING   Reading buffered locally.  Buffer: 9 unsent.
+2026-03-03 17:15:04  INFO      Data Sent: [PM2.5: 158.2 | PM10: 296.5 | Temp: 13.8C | Humidity: 60.9% | CO: 4.48 ppm | AQI: 233 | Very Unhealthy]
+2026-03-03 17:15:09  WARNING   Reading buffered locally.  Buffer: 10 unsent.
+2026-03-03 17:15:09  INFO      Data Sent: [PM2.5: 150.2 | PM10: 256.0 | Temp: 17.2C | Humidity: 57.0% | CO: 4.53 ppm | AQI: 225 | Very Unhealthy]
+2026-03-03 17:15:14  WARNING   Reading buffered locally.  Buffer: 11 unsent.
+2026-03-03 17:15:14  INFO      Data Sent: [PM2.5: 124.0 | PM10: 226.2 | Temp: 13.3C | Humidity: 76.8% | CO: 8.96 ppm | AQI: 199 | Unhealthy]
+2026-03-03 17:15:25  INFO      SQLite buffer ready  →  aq_buffer.db
+2026-03-03 17:15:25  WARNING   paho-mqtt unavailable — HTTP fallback only.
+2026-03-03 17:15:25  INFO      === NORMAL MODE ===  Realistic Kathmandu patterns active.
+2026-03-03 17:15:25  INFO      Automatic pollution spike every 25 readings.
+2026-03-03 17:15:25  INFO      Simulation started. Press Ctrl+C to stop.
+
+2026-03-03 17:15:25  WARNING   MQTT unavailable — trying HTTP fallback ...
+2026-03-03 17:15:25  WARNING   HTTP fallback also failed.
+2026-03-03 17:15:25  WARNING   Reading buffered locally.  Buffer: 12 unsent.
+2026-03-03 17:15:25  INFO      Data Sent: [PM2.5: 245.6 | PM10: 530.0 | Temp: 13.6C | Humidity: 32.9% | CO: 4.83 ppm | AQI: 341 | Hazardous]
+2026-03-03 17:15:34  INFO      SQLite buffer ready  →  aq_buffer.db
+2026-03-03 17:15:34  WARNING   paho-mqtt unavailable — HTTP fallback only.
+2026-03-03 17:15:34  WARNING   === ALERT DEMO MODE ===  Sending PM2.5 > 150 continuously.
+2026-03-03 17:15:34  WARNING   Watch for alarms appearing on your ThingsBoard dashboard.
+2026-03-03 17:15:34  INFO      Simulation started. Press Ctrl+C to stop.
+
+2026-03-03 17:15:34  WARNING   MQTT unavailable — trying HTTP fallback ...
+2026-03-03 17:15:34  WARNING   HTTP fallback also failed.
+2026-03-03 17:15:35  WARNING   Reading buffered locally.  Buffer: 13 unsent.
+2026-03-03 17:15:35  INFO      Data Sent: [PM2.5: 234.9 | PM10: 463.8 | Temp: 13.0C | Humidity: 67.8% | CO: 17.72 ppm | AQI: 320 | Hazardous]
+2026-03-03 17:15:40  WARNING   MQTT unavailable — trying HTTP fallback ...
+2026-03-03 17:15:40  WARNING   HTTP fallback also failed.
+2026-03-03 17:15:40  WARNING   Reading buffered locally.  Buffer: 14 unsent.
+2026-03-03 17:15:40  INFO      Data Sent: [PM2.5: 155.9 | PM10: 309.1 | Temp: 13.7C | Humidity: 73.0% | CO: 18.69 ppm | AQI: 231 | Very Unhealthy]
+2026-03-03 17:15:45  WARNING   MQTT unavailable — trying HTTP fallback ...
+2026-03-03 17:15:46  WARNING   HTTP fallback also failed.
+2026-03-03 17:15:46  WARNING   Reading buffered locally.  Buffer: 15 unsent.
+2026-03-03 17:15:46  INFO      Data Sent: [PM2.5: 289.4 | PM10: 524.6 | Temp: 15.0C | Humidity: 47.2% | CO: 9.77 ppm | AQI: 428 | Hazardous]
+2026-03-03 17:15:51  WARNING   MQTT unavailable — trying HTTP fallback ...
+2026-03-03 17:15:52  WARNING   HTTP fallback also failed.
+2026-03-03 17:15:52  WARNING   Reading buffered locally.  Buffer: 16 unsent.
+2026-03-03 17:15:52  INFO      Data Sent: [PM2.5: 198.0 | PM10: 337.1 | Temp: 16.1C | Humidity: 61.7% | CO: 10.98 ppm | AQI: 273 | Very Unhealthy]
+2026-03-03 17:24:32  INFO      SQLite buffer ready  →  aq_buffer.db
+2026-03-03 17:24:32  WARNING   paho-mqtt unavailable — HTTP fallback only.
+2026-03-03 17:24:32  INFO      === NORMAL MODE ===  Realistic Kathmandu patterns active.
+2026-03-03 17:24:32  INFO      Automatic pollution spike every 25 readings.
+2026-03-03 17:24:32  INFO      Simulation started. Press Ctrl+C to stop.
+
+2026-03-03 17:24:32  WARNING   MQTT unavailable — trying HTTP fallback ...
+2026-03-03 17:24:33  WARNING   HTTP fallback also failed.
+2026-03-03 17:24:33  WARNING   Reading buffered locally.  Buffer: 17 unsent.
+2026-03-03 17:24:33  INFO      Data Sent: [PM2.5: 165.3 | PM10: 356.9 | Temp: 14.0C | Humidity: 54.5% | CO: 6.96 ppm | AQI: 240 | Very Unhealthy]
+2026-03-03 17:24:38  WARNING   MQTT unavailable — trying HTTP fallback ...
+2026-03-03 17:24:39  WARNING   HTTP fallback also failed.
+2026-03-03 17:24:39  WARNING   Reading buffered locally.  Buffer: 18 unsent.
+2026-03-03 17:24:39  INFO      Data Sent: [PM2.5: 161.6 | PM10: 312.9 | Temp: 14.6C | Humidity: 42.1% | CO: 6.47 ppm | AQI: 237 | Very Unhealthy]
+2026-03-03 17:24:44  WARNING   MQTT unavailable — trying HTTP fallback ...
+2026-03-03 17:24:45  WARNING   HTTP fallback also failed.
+2026-03-03 17:24:45  WARNING   Reading buffered locally.  Buffer: 19 unsent.
+2026-03-03 17:24:45  INFO      Data Sent: [PM2.5: 125.3 | PM10: 226.0 | Temp: 11.6C | Humidity: 54.0% | CO: 5.71 ppm | AQI: 200 | Unhealthy]
+2026-03-03 17:24:50  WARNING   MQTT unavailable — trying HTTP fallback ...
+2026-03-03 17:24:51  WARNING   HTTP fallback also failed.
+2026-03-03 17:24:51  WARNING   Reading buffered locally.  Buffer: 20 unsent.
+2026-03-03 17:24:51  INFO      Data Sent: [PM2.5: 291.0 | PM10: 614.4 | Temp: 16.0C | Humidity: 51.4% | CO: 1.85 ppm | AQI: 431 | Hazardous]
+2026-03-03 17:24:56  WARNING   MQTT unavailable — trying HTTP fallback ...
+2026-03-03 17:24:57  WARNING   HTTP fallback also failed.
+2026-03-03 17:24:57  WARNING   Reading buffered locally.  Buffer: 21 unsent.
+2026-03-03 17:24:57  INFO      Data Sent: [PM2.5: 220.4 | PM10: 475.1 | Temp: 15.2C | Humidity: 67.3% | CO: 6.03 ppm | AQI: 295 | Very Unhealthy]
+2026-03-03 17:25:02  WARNING   MQTT unavailable — trying HTTP fallback ...
+2026-03-03 17:25:03  WARNING   HTTP fallback also failed.
+2026-03-03 17:25:03  WARNING   Reading buffered locally.  Buffer: 22 unsent.
+2026-03-03 17:25:03  INFO      Data Sent: [PM2.5: 176.9 | PM10: 312.4 | Temp: 12.8C | Humidity: 64.8% | CO: 7.40 ppm | AQI: 252 | Very Unhealthy]
+2026-03-03 17:25:08  WARNING   MQTT unavailable — trying HTTP fallback ...
+2026-03-03 17:25:08  WARNING   HTTP fallback also failed.
+2026-03-03 17:25:09  WARNING   Reading buffered locally.  Buffer: 23 unsent.
+2026-03-03 17:25:09  INFO      Data Sent: [PM2.5: 139.4 | PM10: 274.8 | Temp: 13.5C | Humidity: 47.3% | CO: 6.19 ppm | AQI: 215 | Very Unhealthy]
+2026-03-03 17:25:14  WARNING   MQTT unavailable — trying HTTP fallback ...
+2026-03-03 17:25:14  WARNING   HTTP fallback also failed.
+2026-03-03 17:25:14  WARNING   Reading buffered locally.  Buffer: 24 unsent.
+2026-03-03 17:25:14  INFO      Data Sent: [PM2.5: 184.5 | PM10: 383.9 | Temp: 11.0C | Humidity: 55.3% | CO: 7.28 ppm | AQI: 259 | Very Unhealthy]
+2026-03-03 17:25:19  WARNING   MQTT unavailable — trying HTTP fallback ...
+2026-03-03 17:25:20  WARNING   HTTP fallback also failed.
+2026-03-03 17:25:20  WARNING   Reading buffered locally.  Buffer: 25 unsent.
+2026-03-03 17:25:20  INFO      Data Sent: [PM2.5: 134.3 | PM10: 281.4 | Temp: 13.7C | Humidity: 46.7% | CO: 5.01 ppm | AQI: 210 | Very Unhealthy]
+2026-03-03 17:25:25  WARNING   MQTT unavailable — trying HTTP fallback ...
+2026-03-03 17:25:26  WARNING   HTTP fallback also failed.
+2026-03-03 17:25:26  WARNING   Reading buffered locally.  Buffer: 26 unsent.
+2026-03-03 17:25:26  INFO      Data Sent: [PM2.5: 27.9 | PM10: 51.2 | Temp: 14.3C | Humidity: 46.8% | CO: 6.05 ppm | AQI: 86 | Moderate]
+2026-03-03 17:25:31  WARNING   MQTT unavailable — trying HTTP fallback ...
+2026-03-03 17:25:32  WARNING   HTTP fallback also failed.
+2026-03-03 17:25:32  WARNING   Reading buffered locally.  Buffer: 27 unsent.
+2026-03-03 17:25:32  INFO      Data Sent: [PM2.5: 256.4 | PM10: 519.2 | Temp: 11.9C | Humidity: 62.5% | CO: 9.08 ppm | AQI: 363 | Hazardous]
+2026-03-03 17:25:37  WARNING   MQTT unavailable — trying HTTP fallback ...
+2026-03-03 17:25:38  WARNING   HTTP fallback also failed.
+2026-03-03 17:25:38  WARNING   Reading buffered locally.  Buffer: 28 unsent.
+2026-03-03 17:25:38  INFO      Data Sent: [PM2.5: 137.3 | PM10: 271.3 | Temp: 16.8C | Humidity: 74.5% | CO: 6.79 ppm | AQI: 213 | Very Unhealthy]
+2026-03-03 17:25:43  WARNING   MQTT unavailable — trying HTTP fallback ...
+2026-03-03 17:25:44  WARNING   HTTP fallback also failed.
+2026-03-03 17:25:44  WARNING   Reading buffered locally.  Buffer: 29 unsent.
+2026-03-03 17:25:44  INFO      Data Sent: [PM2.5: 126.8 | PM10: 228.2 | Temp: 15.6C | Humidity: 54.0% | CO: 2.91 ppm | AQI: 202 | Very Unhealthy]
+2026-03-03 17:25:49  WARNING   MQTT unavailable — trying HTTP fallback ...
+2026-03-03 17:25:50  WARNING   HTTP fallback also failed.
+2026-03-03 17:25:50  WARNING   Reading buffered locally.  Buffer: 30 unsent.
+2026-03-03 17:25:50  INFO      Data Sent: [PM2.5: 129.8 | PM10: 259.2 | Temp: 13.6C | Humidity: 37.4% | CO: 5.90 ppm | AQI: 205 | Very Unhealthy]
+2026-03-03 17:25:55  WARNING   MQTT unavailable — trying HTTP fallback ...
+2026-03-03 17:25:56  WARNING   HTTP fallback also failed.
+2026-03-03 17:25:56  WARNING   Reading buffered locally.  Buffer: 31 unsent.
+2026-03-03 17:25:56  INFO      Data Sent: [PM2.5: 189.3 | PM10: 383.0 | Temp: 14.8C | Humidity: 51.1% | CO: 9.17 ppm | AQI: 264 | Very Unhealthy]
+2026-03-03 17:26:01  WARNING   MQTT unavailable — trying HTTP fallback ...
+2026-03-03 17:26:02  WARNING   HTTP fallback also failed.
+2026-03-03 17:26:02  WARNING   Reading buffered locally.  Buffer: 32 unsent.
+2026-03-03 17:26:02  INFO      Data Sent: [PM2.5: 208.4 | PM10: 407.2 | Temp: 13.5C | Humidity: 52.8% | CO: 7.82 ppm | AQI: 283 | Very Unhealthy]
+2026-03-03 17:26:07  WARNING   MQTT unavailable — trying HTTP fallback ...
+2026-03-03 17:26:08  WARNING   HTTP fallback also failed.
+2026-03-03 17:26:08  WARNING   Reading buffered locally.  Buffer: 33 unsent.
+2026-03-03 17:26:08  INFO      Data Sent: [PM2.5: 279.8 | PM10: 585.7 | Temp: 16.2C | Humidity: 62.0% | CO: 6.89 ppm | AQI: 409 | Hazardous]
+2026-03-03 17:26:13  WARNING   MQTT unavailable — trying HTTP fallback ...
+2026-03-03 17:26:13  WARNING   HTTP fallback also failed.
+2026-03-03 17:26:14  WARNING   Reading buffered locally.  Buffer: 34 unsent.
+2026-03-03 17:26:14  INFO      Data Sent: [PM2.5: 156.3 | PM10: 286.9 | Temp: 11.7C | Humidity: 52.9% | CO: 5.60 ppm | AQI: 232 | Very Unhealthy]
+2026-03-03 17:26:19  WARNING   MQTT unavailable — trying HTTP fallback ...
+2026-03-03 17:26:19  WARNING   HTTP fallback also failed.
+2026-03-03 17:26:19  WARNING   Reading buffered locally.  Buffer: 35 unsent.
+2026-03-03 17:26:19  INFO      Data Sent: [PM2.5: 165.7 | PM10: 342.9 | Temp: 13.5C | Humidity: 44.4% | CO: 11.86 ppm | AQI: 241 | Very Unhealthy]
+2026-03-03 17:26:24  WARNING   MQTT unavailable — trying HTTP fallback ...
+2026-03-03 17:26:25  WARNING   HTTP fallback also failed.
+2026-03-03 17:26:25  WARNING   Reading buffered locally.  Buffer: 36 unsent.
+2026-03-03 17:26:25  INFO      Data Sent: [PM2.5: 181.1 | PM10: 341.3 | Temp: 14.3C | Humidity: 49.0% | CO: 5.68 ppm | AQI: 256 | Very Unhealthy]
+2026-03-03 17:26:30  WARNING   MQTT unavailable — trying HTTP fallback ...
+2026-03-03 17:26:31  WARNING   HTTP fallback also failed.
+2026-03-03 17:26:31  WARNING   Reading buffered locally.  Buffer: 37 unsent.
+2026-03-03 17:26:31  INFO      Data Sent: [PM2.5: 186.4 | PM10: 391.7 | Temp: 13.4C | Humidity: 32.6% | CO: 4.67 ppm | AQI: 261 | Very Unhealthy]
+2026-03-03 17:26:36  WARNING   MQTT unavailable — trying HTTP fallback ...
+2026-03-03 17:26:37  WARNING   HTTP fallback also failed.
+2026-03-03 17:26:37  WARNING   Reading buffered locally.  Buffer: 38 unsent.
+2026-03-03 17:26:37  INFO      Data Sent: [PM2.5: 123.6 | PM10: 210.2 | Temp: 9.7C | Humidity: 37.9% | CO: 6.08 ppm | AQI: 199 | Unhealthy]
+2026-03-03 17:26:42  WARNING   MQTT unavailable — trying HTTP fallback ...
+2026-03-03 17:26:43  WARNING   HTTP fallback also failed.
+2026-03-03 17:26:43  WARNING   Reading buffered locally.  Buffer: 39 unsent.
+2026-03-03 17:26:43  INFO      Data Sent: [PM2.5: 113.7 | PM10: 201.2 | Temp: 10.2C | Humidity: 59.3% | CO: 3.89 ppm | AQI: 192 | Unhealthy]
+2026-03-03 17:26:48  WARNING   MQTT unavailable — trying HTTP fallback ...
+2026-03-03 17:26:49  WARNING   HTTP fallback also failed.
+2026-03-03 17:26:49  WARNING   Reading buffered locally.  Buffer: 40 unsent.
+2026-03-03 17:26:49  INFO      Data Sent: [PM2.5: 202.8 | PM10: 355.6 | Temp: 14.3C | Humidity: 57.5% | CO: 5.83 ppm | AQI: 278 | Very Unhealthy]
+2026-03-03 17:26:54  WARNING   POLLUTION SPIKE EVENT #1 — simulating traffic congestion / waste burning (8 readings)
+2026-03-03 17:26:54  WARNING   MQTT unavailable — trying HTTP fallback ...
+2026-03-03 17:26:55  WARNING   HTTP fallback also failed.
+2026-03-03 17:26:55  WARNING   Reading buffered locally.  Buffer: 41 unsent.
+2026-03-03 17:26:55  INFO      Data Sent: [PM2.5: 307.3 | PM10: 602.9 | Temp: 15.1C | Humidity: 65.8% | CO: 11.39 ppm | AQI: 464 | Hazardous]
+2026-03-03 17:32:27  INFO      SQLite buffer ready  →  aq_buffer.db
+2026-03-03 17:32:27  INFO      MQTT connect attempt 1/6 ...
+2026-03-03 17:32:28  ERROR     MQTT connect failed RC=5: Not authorised
+2026-03-03 17:32:28  WARNING   MQTT disconnected unexpectedly (RC=5)
+2026-03-03 17:32:29  WARNING   Retry in 2s ...
+2026-03-03 17:32:31  INFO      MQTT connect attempt 2/6 ...
+2026-03-03 17:32:31  ERROR     MQTT connect failed RC=5: Not authorised
+2026-03-03 17:32:31  WARNING   MQTT disconnected unexpectedly (RC=5)
+2026-03-03 17:32:32  WARNING   Retry in 4s ...
+2026-03-03 17:32:36  INFO      MQTT connect attempt 3/6 ...
+2026-03-03 17:32:37  ERROR     MQTT connect failed RC=5: Not authorised
+2026-03-03 17:32:37  WARNING   MQTT disconnected unexpectedly (RC=5)
+2026-03-03 17:32:38  WARNING   Retry in 8s ...
+2026-03-03 17:32:46  INFO      MQTT connect attempt 4/6 ...
+2026-03-03 17:32:46  ERROR     MQTT connect failed RC=5: Not authorised
+2026-03-03 17:32:46  WARNING   MQTT disconnected unexpectedly (RC=5)
+2026-03-03 17:32:47  WARNING   Retry in 16s ...
+2026-03-03 17:33:03  INFO      MQTT connect attempt 5/6 ...
+2026-03-03 17:33:04  ERROR     MQTT connect failed RC=5: Not authorised
+2026-03-03 17:33:04  WARNING   MQTT disconnected unexpectedly (RC=5)
+2026-03-03 17:33:05  WARNING   Retry in 32s ...
+2026-03-03 17:33:57  INFO      SQLite buffer ready  →  aq_buffer.db
+2026-03-03 17:33:57  INFO      MQTT connect attempt 1/6 ...
+2026-03-03 17:33:58  INFO      MQTT connected  ->  thingsboard.cloud:1883
+2026-03-03 17:33:58  INFO      Flushing 41 buffered reading(s) to ThingsBoard ...
+2026-03-03 17:34:09  INFO      Flushed 41/41 buffered readings.
+2026-03-03 17:34:09  INFO      === NORMAL MODE ===  Realistic Kathmandu patterns active.
+2026-03-03 17:34:09  INFO      Automatic pollution spike every 25 readings.
+2026-03-03 17:34:09  INFO      Simulation started. Press Ctrl+C to stop.
+
+2026-03-03 17:34:10  INFO      Data Sent: [PM2.5: 120.6 | PM10: 259.5 | Temp: 13.3C | Humidity: 58.3% | CO: 5.23 ppm | AQI: 197 | Unhealthy]
+2026-03-03 17:34:15  INFO      Data Sent: [PM2.5: 231.3 | PM10: 478.2 | Temp: 13.5C | Humidity: 57.8% | CO: 5.96 ppm | AQI: 313 | Hazardous]
+2026-03-03 17:34:20  INFO      Data Sent: [PM2.5: 183.0 | PM10: 353.3 | Temp: 9.8C | Humidity: 68.3% | CO: 7.53 ppm | AQI: 258 | Very Unhealthy]
+2026-03-03 17:34:26  INFO      Data Sent: [PM2.5: 170.0 | PM10: 302.9 | Temp: 12.5C | Humidity: 44.8% | CO: 5.86 ppm | AQI: 245 | Very Unhealthy]
+2026-03-03 17:34:31  INFO      Data Sent: [PM2.5: 174.0 | PM10: 380.5 | Temp: 13.3C | Humidity: 74.4% | CO: 3.41 ppm | AQI: 249 | Very Unhealthy]
+2026-03-03 17:34:36  INFO      Data Sent: [PM2.5: 249.2 | PM10: 435.5 | Temp: 9.6C | Humidity: 57.7% | CO: 6.35 ppm | AQI: 348 | Hazardous]
+2026-03-03 17:34:40  INFO      MQTT client disconnected cleanly.
+2026-03-03 17:44:58  INFO      SQLite buffer ready  →  aq_buffer.db
+2026-03-03 17:44:58  INFO      MQTT connect attempt 1/6 ...
+2026-03-03 17:44:59  INFO      MQTT connected  ->  thingsboard.cloud:1883
+2026-03-03 17:44:59  INFO      === NORMAL MODE ===  Realistic Kathmandu patterns active.
+2026-03-03 17:44:59  INFO      Automatic pollution spike every 25 readings.
+2026-03-03 17:44:59  INFO      Simulation started. Press Ctrl+C to stop.
+
+2026-03-03 17:45:00  INFO      Data Sent: [PM2.5: 189.6 | PM10: 344.9 | Temp: 11.1C | Humidity: 54.4% | CO: 8.25 ppm | AQI: 265 | Very Unhealthy]
+2026-03-03 17:45:05  INFO      Data Sent: [PM2.5: 205.0 | PM10: 420.8 | Temp: 15.3C | Humidity: 69.1% | CO: 9.00 ppm | AQI: 280 | Very Unhealthy]
+2026-03-03 17:45:10  INFO      Data Sent: [PM2.5: 277.5 | PM10: 489.3 | Temp: 14.7C | Humidity: 59.6% | CO: 7.59 ppm | AQI: 405 | Hazardous]
+2026-03-03 17:45:15  INFO      Data Sent: [PM2.5: 217.9 | PM10: 394.3 | Temp: 11.4C | Humidity: 52.9% | CO: 7.37 ppm | AQI: 293 | Very Unhealthy]
+2026-03-03 17:45:21  INFO      Data Sent: [PM2.5: 264.5 | PM10: 463.0 | Temp: 12.8C | Humidity: 59.2% | CO: 7.03 ppm | AQI: 379 | Hazardous]
+2026-03-03 17:45:26  INFO      Data Sent: [PM2.5: 209.0 | PM10: 356.3 | Temp: 11.7C | Humidity: 58.4% | CO: 3.48 ppm | AQI: 284 | Very Unhealthy]
+2026-03-03 17:45:31  INFO      Data Sent: [PM2.5: 224.8 | PM10: 394.2 | Temp: 9.3C | Humidity: 63.4% | CO: 4.53 ppm | AQI: 299 | Very Unhealthy]
+2026-03-03 17:45:37  INFO      Data Sent: [PM2.5: 220.6 | PM10: 434.9 | Temp: 17.3C | Humidity: 66.9% | CO: 9.68 ppm | AQI: 295 | Very Unhealthy]
+2026-03-03 17:45:42  INFO      Data Sent: [PM2.5: 246.9 | PM10: 474.9 | Temp: 14.2C | Humidity: 42.2% | CO: 8.87 ppm | AQI: 344 | Hazardous]
+2026-03-03 17:45:47  INFO      Data Sent: [PM2.5: 113.3 | PM10: 202.3 | Temp: 11.6C | Humidity: 51.4% | CO: 7.08 ppm | AQI: 192 | Unhealthy]
+2026-03-03 17:45:52  INFO      Data Sent: [PM2.5: 209.7 | PM10: 414.6 | Temp: 14.9C | Humidity: 54.1% | CO: 9.40 ppm | AQI: 284 | Very Unhealthy]
+2026-03-03 17:45:58  INFO      Data Sent: [PM2.5: 186.7 | PM10: 319.9 | Temp: 12.2C | Humidity: 58.0% | CO: 8.26 ppm | AQI: 262 | Very Unhealthy]
+2026-03-03 17:46:03  INFO      Data Sent: [PM2.5: 215.4 | PM10: 385.9 | Temp: 14.1C | Humidity: 74.0% | CO: 6.31 ppm | AQI: 290 | Very Unhealthy]
+2026-03-03 17:46:08  INFO      Data Sent: [PM2.5: 227.1 | PM10: 388.1 | Temp: 7.4C | Humidity: 48.1% | CO: 10.98 ppm | AQI: 304 | Hazardous]
+2026-03-03 17:46:14  INFO      Data Sent: [PM2.5: 200.8 | PM10: 404.4 | Temp: 12.6C | Humidity: 68.2% | CO: 5.04 ppm | AQI: 276 | Very Unhealthy]
+2026-03-03 17:46:19  INFO      Data Sent: [PM2.5: 261.1 | PM10: 513.6 | Temp: 10.4C | Humidity: 55.4% | CO: 4.02 ppm | AQI: 372 | Hazardous]
+2026-03-03 17:46:24  INFO      Data Sent: [PM2.5: 260.3 | PM10: 517.7 | Temp: 15.0C | Humidity: 49.9% | CO: 5.79 ppm | AQI: 370 | Hazardous]
+2026-03-03 17:46:29  INFO      Data Sent: [PM2.5: 205.8 | PM10: 356.9 | Temp: 12.3C | Humidity: 43.0% | CO: 9.44 ppm | AQI: 281 | Very Unhealthy]
+2026-03-03 17:46:35  INFO      Data Sent: [PM2.5: 157.1 | PM10: 344.3 | Temp: 14.3C | Humidity: 28.7% | CO: 2.32 ppm | AQI: 232 | Very Unhealthy]
+2026-03-03 17:46:40  INFO      Data Sent: [PM2.5: 146.3 | PM10: 296.6 | Temp: 14.0C | Humidity: 48.6% | CO: 5.14 ppm | AQI: 222 | Very Unhealthy]
+2026-03-03 17:46:45  INFO      Data Sent: [PM2.5: 134.1 | PM10: 273.0 | Temp: 13.7C | Humidity: 46.6% | CO: 9.23 ppm | AQI: 210 | Very Unhealthy]
+2026-03-03 17:46:51  INFO      Data Sent: [PM2.5: 316.5 | PM10: 581.6 | Temp: 13.8C | Humidity: 65.9% | CO: 9.46 ppm | AQI: 482 | Hazardous]
+2026-03-03 17:46:56  INFO      Data Sent: [PM2.5: 181.2 | PM10: 312.4 | Temp: 8.0C | Humidity: 59.4% | CO: 8.91 ppm | AQI: 256 | Very Unhealthy]
+2026-03-03 17:47:01  INFO      Data Sent: [PM2.5: 206.6 | PM10: 426.1 | Temp: 14.2C | Humidity: 41.7% | CO: 11.30 ppm | AQI: 281 | Very Unhealthy]
+2026-03-03 17:47:06  WARNING   POLLUTION SPIKE EVENT #1 — simulating traffic congestion / waste burning (8 readings)
+2026-03-03 17:47:06  INFO      Data Sent: [PM2.5: 221.5 | PM10: 425.5 | Temp: 7.4C | Humidity: 49.5% | CO: 10.92 ppm | AQI: 296 | Very Unhealthy]
+2026-03-03 17:47:12  INFO      Data Sent: [PM2.5: 222.2 | PM10: 401.3 | Temp: 13.6C | Humidity: 48.7% | CO: 10.39 ppm | AQI: 297 | Very Unhealthy]
+2026-03-03 17:47:17  INFO      Data Sent: [PM2.5: 289.2 | PM10: 610.1 | Temp: 12.5C | Humidity: 46.5% | CO: 11.90 ppm | AQI: 428 | Hazardous]
+2026-03-03 17:47:22  INFO      Data Sent: [PM2.5: 165.2 | PM10: 328.6 | Temp: 12.8C | Humidity: 44.8% | CO: 13.24 ppm | AQI: 240 | Very Unhealthy]
+2026-03-03 17:47:28  INFO      Data Sent: [PM2.5: 311.6 | PM10: 548.2 | Temp: 12.2C | Humidity: 51.7% | CO: 13.69 ppm | AQI: 473 | Hazardous]
+2026-03-03 17:47:33  INFO      Data Sent: [PM2.5: 173.1 | PM10: 330.8 | Temp: 15.8C | Humidity: 61.4% | CO: 14.59 ppm | AQI: 248 | Very Unhealthy]
+2026-03-03 17:47:38  INFO      Data Sent: [PM2.5: 161.2 | PM10: 286.9 | Temp: 13.9C | Humidity: 38.0% | CO: 8.79 ppm | AQI: 236 | Very Unhealthy]
+2026-03-03 17:47:43  INFO      Data Sent: [PM2.5: 266.4 | PM10: 462.5 | Temp: 9.1C | Humidity: 49.7% | CO: 13.19 ppm | AQI: 382 | Hazardous]
+2026-03-03 17:47:49  INFO      Data Sent: [PM2.5: 212.8 | PM10: 440.5 | Temp: 14.1C | Humidity: 30.0% | CO: 6.70 ppm | AQI: 288 | Very Unhealthy]
+2026-03-03 17:47:54  INFO      Data Sent: [PM2.5: 280.5 | PM10: 495.7 | Temp: 16.6C | Humidity: 48.4% | CO: 8.00 ppm | AQI: 411 | Hazardous]
+2026-03-03 17:47:59  INFO      Data Sent: [PM2.5: 256.8 | PM10: 527.9 | Temp: 12.5C | Humidity: 56.7% | CO: 10.97 ppm | AQI: 363 | Hazardous]
+2026-03-03 17:48:05  INFO      Data Sent: [PM2.5: 327.8 | PM10: 703.2 | Temp: 12.5C | Humidity: 43.3% | CO: 9.15 ppm | AQI: 500 | Hazardous]
+2026-03-03 17:48:10  INFO      Data Sent: [PM2.5: 82.8 | PM10: 152.9 | Temp: 12.8C | Humidity: 43.9% | CO: 5.21 ppm | AQI: 170 | Unhealthy]
+2026-03-03 17:48:15  INFO      Data Sent: [PM2.5: 313.1 | PM10: 589.1 | Temp: 14.2C | Humidity: 59.3% | CO: 5.64 ppm | AQI: 475 | Hazardous]
+2026-03-03 17:48:20  INFO      Data Sent: [PM2.5: 296.9 | PM10: 619.1 | Temp: 12.4C | Humidity: 56.5% | CO: 8.34 ppm | AQI: 443 | Hazardous]
+2026-03-03 17:48:26  INFO      Data Sent: [PM2.5: 198.6 | PM10: 379.4 | Temp: 11.8C | Humidity: 74.6% | CO: 5.97 ppm | AQI: 273 | Very Unhealthy]
+2026-03-03 17:48:31  INFO      Data Sent: [PM2.5: 210.4 | PM10: 390.1 | Temp: 14.4C | Humidity: 59.6% | CO: 7.58 ppm | AQI: 285 | Very Unhealthy]
+2026-03-03 17:48:36  INFO      Data Sent: [PM2.5: 269.7 | PM10: 577.7 | Temp: 13.4C | Humidity: 55.6% | CO: 4.77 ppm | AQI: 389 | Hazardous]
+2026-03-03 17:48:42  INFO      Data Sent: [PM2.5: 252.1 | PM10: 457.6 | Temp: 13.8C | Humidity: 56.6% | CO: 6.40 ppm | AQI: 354 | Hazardous]
+2026-03-03 17:48:47  INFO      Data Sent: [PM2.5: 157.0 | PM10: 308.0 | Temp: 14.0C | Humidity: 37.0% | CO: 9.65 ppm | AQI: 232 | Very Unhealthy]
+2026-03-03 17:48:52  INFO      Data Sent: [PM2.5: 205.3 | PM10: 430.3 | Temp: 13.0C | Humidity: 55.1% | CO: 6.56 ppm | AQI: 280 | Very Unhealthy]
+2026-03-03 17:48:57  INFO      Data Sent: [PM2.5: 230.9 | PM10: 399.7 | Temp: 12.8C | Humidity: 45.2% | CO: 9.77 ppm | AQI: 312 | Hazardous]
+2026-03-03 17:49:03  INFO      Data Sent: [PM2.5: 205.4 | PM10: 369.3 | Temp: 11.7C | Humidity: 38.3% | CO: 9.15 ppm | AQI: 280 | Very Unhealthy]
+2026-03-03 17:49:08  INFO      Data Sent: [PM2.5: 169.4 | PM10: 326.0 | Temp: 13.5C | Humidity: 57.8% | CO: 4.68 ppm | AQI: 245 | Very Unhealthy]
+2026-03-03 17:49:13  INFO      Data Sent: [PM2.5: 308.6 | PM10: 644.1 | Temp: 14.0C | Humidity: 61.8% | CO: 3.61 ppm | AQI: 467 | Hazardous]
+2026-03-03 17:49:18  WARNING   POLLUTION SPIKE EVENT #2 — simulating traffic congestion / waste burning (8 readings)
+2026-03-03 17:49:19  INFO      Data Sent: [PM2.5: 274.6 | PM10: 517.9 | Temp: 16.1C | Humidity: 41.7% | CO: 11.67 ppm | AQI: 399 | Hazardous]
+2026-03-03 17:49:24  INFO      Data Sent: [PM2.5: 318.3 | PM10: 592.6 | Temp: 15.4C | Humidity: 54.5% | CO: 17.33 ppm | AQI: 486 | Hazardous]
+2026-03-03 17:49:29  INFO      Data Sent: [PM2.5: 305.9 | PM10: 629.3 | Temp: 12.8C | Humidity: 55.2% | CO: 16.30 ppm | AQI: 461 | Hazardous]
+2026-03-03 17:49:34  INFO      Data Sent: [PM2.5: 165.9 | PM10: 318.3 | Temp: 13.2C | Humidity: 67.4% | CO: 10.10 ppm | AQI: 241 | Very Unhealthy]
+2026-03-03 17:49:40  INFO      Data Sent: [PM2.5: 258.4 | PM10: 451.8 | Temp: 11.5C | Humidity: 36.3% | CO: 8.66 ppm | AQI: 367 | Hazardous]
+2026-03-03 17:49:45  INFO      Data Sent: [PM2.5: 264.7 | PM10: 502.4 | Temp: 11.9C | Humidity: 44.1% | CO: 19.34 ppm | AQI: 379 | Hazardous]
+2026-03-03 17:49:50  INFO      Data Sent: [PM2.5: 249.8 | PM10: 529.5 | Temp: 13.8C | Humidity: 66.5% | CO: 13.05 ppm | AQI: 349 | Hazardous]
+2026-03-03 17:49:56  INFO      Data Sent: [PM2.5: 231.0 | PM10: 432.2 | Temp: 15.9C | Humidity: 46.6% | CO: 18.47 ppm | AQI: 312 | Hazardous]
+2026-03-03 17:49:59  INFO      MQTT client disconnected cleanly.
+2026-03-03 17:50:38  INFO      SQLite buffer ready  →  aq_buffer.db
+2026-03-03 17:50:38  INFO      MQTT connect attempt 1/6 ...
+2026-03-03 17:50:39  INFO      MQTT connected  ->  thingsboard.cloud:1883
+2026-03-03 17:50:39  INFO      NORMAL MODE — realistic patterns + random pollution events.
+2026-03-03 17:50:39  INFO      Simulation running. Press Ctrl+C to stop.
+
+2026-03-03 17:50:39  INFO      Data Sent: [PM2.5: 158.9 | PM10: 329.6 | Temp: 13.4C | Humidity: 51.5% | CO: 8.44ppm | AQI: 234 | NowCast: 234 | Risk: 55/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:50:45  INFO      Data Sent: [PM2.5: 119.2 | PM10: 253.1 | Temp: 11.6C | Humidity: 47.6% | CO: 6.15ppm | AQI: 196 | NowCast: 208 | Risk: 39/100 | Event: Normal | Unhealthy]
+2026-03-03 17:50:50  INFO      Data Sent: [PM2.5: 135.9 | PM10: 290.9 | Temp: 12.0C | Humidity: 57.8% | CO: 2.96ppm | AQI: 211 | NowCast: 210 | Risk: 43/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:50:55  INFO      Data Sent: [PM2.5: 229.0 | PM10: 438.0 | Temp: 14.7C | Humidity: 42.5% | CO: 4.75ppm | AQI: 308 | NowCast: 260 | Risk: 70/100 | Event: Normal | Hazardous]
+2026-03-03 17:51:01  INFO      Data Sent: [PM2.5: 137.9 | PM10: 260.2 | Temp: 12.5C | Humidity: 43.5% | CO: 4.92ppm | AQI: 213 | NowCast: 236 | Risk: 45/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:51:06  INFO      Data Sent: [PM2.5: 95.7 | PM10: 205.7 | Temp: 12.2C | Humidity: 47.2% | CO: 4.30ppm | AQI: 179 | NowCast: 208 | Risk: 33/100 | Event: Normal | Unhealthy]
+2026-03-03 17:51:11  INFO      Data Sent: [PM2.5: 182.3 | PM10: 345.0 | Temp: 13.6C | Humidity: 42.2% | CO: 8.58ppm | AQI: 257 | NowCast: 229 | Risk: 60/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:51:16  INFO      Data Sent: [PM2.5: 125.0 | PM10: 264.5 | Temp: 14.4C | Humidity: 74.2% | CO: 5.75ppm | AQI: 200 | NowCast: 217 | Risk: 44/100 | Event: Normal | Unhealthy]
+2026-03-03 17:51:22  INFO      Data Sent: [PM2.5: 154.8 | PM10: 301.5 | Temp: 14.6C | Humidity: 40.1% | CO: 5.74ppm | AQI: 230 | NowCast: 222 | Risk: 49/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:51:27  INFO      Data Sent: [PM2.5: 130.7 | PM10: 273.0 | Temp: 11.9C | Humidity: 58.7% | CO: 6.16ppm | AQI: 206 | NowCast: 216 | Risk: 46/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:51:32  INFO      Data Sent: [PM2.5: 165.1 | PM10: 347.8 | Temp: 14.3C | Humidity: 44.9% | CO: 6.75ppm | AQI: 240 | NowCast: 226 | Risk: 52/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:51:38  INFO      Data Sent: [PM2.5: 129.6 | PM10: 276.1 | Temp: 10.0C | Humidity: 43.1% | CO: 6.37ppm | AQI: 205 | NowCast: 217 | Risk: 46/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:51:43  INFO      Data Sent: [PM2.5: 98.5 | PM10: 186.0 | Temp: 12.4C | Humidity: 43.3% | CO: 4.77ppm | AQI: 181 | NowCast: 199 | Risk: 39/100 | Event: Normal | Unhealthy]
+2026-03-03 17:51:48  INFO      Data Sent: [PM2.5: 155.8 | PM10: 267.3 | Temp: 15.1C | Humidity: 64.5% | CO: 8.35ppm | AQI: 231 | NowCast: 212 | Risk: 52/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:51:53  INFO      Data Sent: [PM2.5: 176.8 | PM10: 337.7 | Temp: 11.6C | Humidity: 54.0% | CO: 5.35ppm | AQI: 252 | NowCast: 229 | Risk: 54/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:51:58  WARNING   POLLUTION EVENT: Traffic Jam  (duration: 4 readings, ~20s)
+2026-03-03 17:51:59  INFO      Data Sent: [PM2.5: 302.0 | PM10: 557.5 | Temp: 12.7C | Humidity: 56.7% | CO: 25.10ppm | AQI: 453 | NowCast: 273 | Risk: 93/100 | Event: Traffic Jam | Hazardous]
+2026-03-03 17:52:04  INFO      Data Sent: [PM2.5: 478.7 | PM10: 1036.3 | Temp: 8.9C | Humidity: 59.6% | CO: 23.16ppm | AQI: 500 | NowCast: 338 | Risk: 95/100 | Event: Traffic Jam | Hazardous]
+2026-03-03 17:52:09  INFO      Data Sent: [PM2.5: 506.8 | PM10: 980.7 | Temp: 14.6C | Humidity: 48.8% | CO: 40.94ppm | AQI: 500 | NowCast: 449 | Risk: 100/100 | Event: Traffic Jam | Hazardous]
+2026-03-03 17:52:15  INFO      Data Sent: [PM2.5: 438.6 | PM10: 868.0 | Temp: 11.5C | Humidity: 57.5% | CO: 19.39ppm | AQI: 500 | NowCast: 500 | Risk: 93/100 | Event: Traffic Jam | Hazardous]
+2026-03-03 17:52:20  INFO      Event ended: traffic_jam — returning to normal.
+2026-03-03 17:52:20  INFO      Data Sent: [PM2.5: 160.4 | PM10: 315.7 | Temp: 10.9C | Humidity: 62.8% | CO: 5.32ppm | AQI: 236 | NowCast: 446 | Risk: 51/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:52:25  INFO      Data Sent: [PM2.5: 86.8 | PM10: 188.0 | Temp: 13.6C | Humidity: 60.7% | CO: 4.95ppm | AQI: 173 | NowCast: 363 | Risk: 32/100 | Event: Normal | Unhealthy]
+2026-03-03 17:52:30  INFO      Data Sent: [PM2.5: 182.2 | PM10: 368.7 | Temp: 13.3C | Humidity: 54.4% | CO: 5.45ppm | AQI: 257 | NowCast: 339 | Risk: 57/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:52:36  INFO      Data Sent: [PM2.5: 184.2 | PM10: 370.0 | Temp: 11.5C | Humidity: 42.9% | CO: 7.63ppm | AQI: 259 | NowCast: 319 | Risk: 56/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:52:41  INFO      Data Sent: [PM2.5: 91.7 | PM10: 169.4 | Temp: 11.7C | Humidity: 49.7% | CO: 5.73ppm | AQI: 176 | NowCast: 284 | Risk: 36/100 | Event: Normal | Unhealthy]
+2026-03-03 17:52:46  INFO      Data Sent: [PM2.5: 97.5 | PM10: 167.0 | Temp: 14.7C | Humidity: 49.9% | CO: 6.89ppm | AQI: 180 | NowCast: 265 | Risk: 37/100 | Event: Normal | Unhealthy]
+2026-03-03 17:52:52  INFO      Data Sent: [PM2.5: 108.9 | PM10: 200.9 | Temp: 11.5C | Humidity: 56.1% | CO: 5.23ppm | AQI: 188 | NowCast: 250 | Risk: 35/100 | Event: Normal | Unhealthy]
+2026-03-03 17:52:57  INFO      Data Sent: [PM2.5: 110.5 | PM10: 224.1 | Temp: 13.4C | Humidity: 67.6% | CO: 9.01ppm | AQI: 190 | NowCast: 238 | Risk: 39/100 | Event: Normal | Unhealthy]
+2026-03-03 17:53:02  INFO      Data Sent: [PM2.5: 175.0 | PM10: 321.1 | Temp: 12.3C | Humidity: 61.9% | CO: 6.96ppm | AQI: 250 | NowCast: 238 | Risk: 55/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:53:07  INFO      Data Sent: [PM2.5: 198.3 | PM10: 337.4 | Temp: 12.2C | Humidity: 61.6% | CO: 3.58ppm | AQI: 273 | NowCast: 238 | Risk: 58/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:53:13  INFO      Data Sent: [PM2.5: 165.5 | PM10: 283.5 | Temp: 10.8C | Humidity: 67.8% | CO: 6.52ppm | AQI: 241 | NowCast: 232 | Risk: 52/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:53:18  INFO      Data Sent: [PM2.5: 122.2 | PM10: 258.6 | Temp: 11.3C | Humidity: 47.1% | CO: 1.46ppm | AQI: 198 | NowCast: 222 | Risk: 39/100 | Event: Normal | Unhealthy]
+2026-03-03 17:53:23  INFO      Data Sent: [PM2.5: 177.7 | PM10: 368.5 | Temp: 12.9C | Humidity: 58.7% | CO: 8.34ppm | AQI: 253 | NowCast: 235 | Risk: 57/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:53:29  INFO      Data Sent: [PM2.5: 147.5 | PM10: 286.7 | Temp: 10.8C | Humidity: 56.4% | CO: 2.94ppm | AQI: 223 | NowCast: 230 | Risk: 47/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:53:34  INFO      Data Sent: [PM2.5: 247.1 | PM10: 478.7 | Temp: 14.8C | Humidity: 42.4% | CO: 3.55ppm | AQI: 344 | NowCast: 264 | Risk: 72/100 | Event: Normal | Hazardous]
+2026-03-03 17:53:39  INFO      Data Sent: [PM2.5: 168.7 | PM10: 296.4 | Temp: 15.0C | Humidity: 31.5% | CO: 4.64ppm | AQI: 244 | NowCast: 256 | Risk: 52/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:53:44  INFO      Data Sent: [PM2.5: 127.4 | PM10: 228.3 | Temp: 14.1C | Humidity: 53.7% | CO: 8.28ppm | AQI: 203 | NowCast: 236 | Risk: 46/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:53:50  INFO      Data Sent: [PM2.5: 153.7 | PM10: 282.6 | Temp: 12.8C | Humidity: 38.6% | CO: 1.71ppm | AQI: 229 | NowCast: 232 | Risk: 48/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:53:55  INFO      Data Sent: [PM2.5: 136.6 | PM10: 265.6 | Temp: 11.4C | Humidity: 59.2% | CO: 5.20ppm | AQI: 212 | NowCast: 223 | Risk: 46/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:54:00  INFO      Data Sent: [PM2.5: 166.6 | PM10: 323.5 | Temp: 13.7C | Humidity: 35.5% | CO: 4.34ppm | AQI: 242 | NowCast: 231 | Risk: 51/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:54:06  INFO      Data Sent: [PM2.5: 184.5 | PM10: 335.0 | Temp: 15.4C | Humidity: 56.8% | CO: 5.28ppm | AQI: 259 | NowCast: 245 | Risk: 57/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:54:11  INFO      Data Sent: [PM2.5: 152.7 | PM10: 276.5 | Temp: 13.2C | Humidity: 61.9% | CO: 2.78ppm | AQI: 228 | NowCast: 237 | Risk: 50/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:54:16  INFO      Data Sent: [PM2.5: 125.6 | PM10: 273.2 | Temp: 10.7C | Humidity: 64.2% | CO: 3.42ppm | AQI: 201 | NowCast: 219 | Risk: 44/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:54:21  INFO      Data Sent: [PM2.5: 149.8 | PM10: 256.9 | Temp: 13.3C | Humidity: 44.3% | CO: 4.22ppm | AQI: 225 | NowCast: 222 | Risk: 50/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:54:27  INFO      Data Sent: [PM2.5: 173.0 | PM10: 328.9 | Temp: 17.2C | Humidity: 35.3% | CO: 3.81ppm | AQI: 248 | NowCast: 235 | Risk: 54/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:54:32  INFO      Data Sent: [PM2.5: 196.8 | PM10: 396.9 | Temp: 15.0C | Humidity: 37.5% | CO: 6.19ppm | AQI: 272 | NowCast: 253 | Risk: 66/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:54:37  INFO      Data Sent: [PM2.5: 172.9 | PM10: 341.5 | Temp: 9.5C | Humidity: 23.4% | CO: 7.61ppm | AQI: 248 | NowCast: 251 | Risk: 56/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:54:43  INFO      Data Sent: [PM2.5: 185.3 | PM10: 319.9 | Temp: 14.0C | Humidity: 39.6% | CO: 6.77ppm | AQI: 260 | NowCast: 255 | Risk: 57/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:54:48  INFO      Data Sent: [PM2.5: 179.1 | PM10: 347.6 | Temp: 14.1C | Humidity: 58.0% | CO: 6.64ppm | AQI: 254 | NowCast: 255 | Risk: 56/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:54:53  INFO      Data Sent: [PM2.5: 109.7 | PM10: 213.7 | Temp: 13.0C | Humidity: 58.4% | CO: 3.54ppm | AQI: 189 | NowCast: 220 | Risk: 38/100 | Event: Normal | Unhealthy]
+2026-03-03 17:54:58  INFO      Data Sent: [PM2.5: 193.4 | PM10: 405.8 | Temp: 14.1C | Humidity: 44.3% | CO: 4.14ppm | AQI: 268 | NowCast: 244 | Risk: 58/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:55:04  INFO      Data Sent: [PM2.5: 157.3 | PM10: 309.9 | Temp: 9.8C | Humidity: 43.5% | CO: 6.74ppm | AQI: 233 | NowCast: 238 | Risk: 50/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:55:09  INFO      Data Sent: [PM2.5: 158.4 | PM10: 288.0 | Temp: 13.0C | Humidity: 62.8% | CO: 5.42ppm | AQI: 234 | NowCast: 236 | Risk: 52/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:55:14  INFO      Data Sent: [PM2.5: 251.8 | PM10: 548.4 | Temp: 16.0C | Humidity: 46.6% | CO: 3.49ppm | AQI: 353 | NowCast: 276 | Risk: 76/100 | Event: Normal | Hazardous]
+2026-03-03 17:55:20  INFO      Data Sent: [PM2.5: 186.6 | PM10: 319.8 | Temp: 15.4C | Humidity: 52.7% | CO: 7.31ppm | AQI: 262 | NowCast: 269 | Risk: 58/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:55:25  INFO      Data Sent: [PM2.5: 160.1 | PM10: 272.4 | Temp: 12.9C | Humidity: 39.8% | CO: 5.25ppm | AQI: 235 | NowCast: 255 | Risk: 53/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:55:30  INFO      Data Sent: [PM2.5: 176.3 | PM10: 301.1 | Temp: 13.9C | Humidity: 57.7% | CO: 7.12ppm | AQI: 251 | NowCast: 253 | Risk: 59/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:55:35  INFO      Data Sent: [PM2.5: 222.1 | PM10: 412.9 | Temp: 9.9C | Humidity: 41.7% | CO: 5.15ppm | AQI: 297 | NowCast: 272 | Risk: 67/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:55:41  INFO      Data Sent: [PM2.5: 157.8 | PM10: 279.3 | Temp: 14.7C | Humidity: 52.0% | CO: 6.74ppm | AQI: 233 | NowCast: 255 | Risk: 50/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:55:46  INFO      Data Sent: [PM2.5: 193.3 | PM10: 368.5 | Temp: 10.0C | Humidity: 61.6% | CO: 4.02ppm | AQI: 268 | NowCast: 261 | Risk: 56/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:55:51  INFO      Data Sent: [PM2.5: 192.3 | PM10: 409.7 | Temp: 13.3C | Humidity: 35.5% | CO: 4.92ppm | AQI: 267 | NowCast: 264 | Risk: 60/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:55:57  INFO      Data Sent: [PM2.5: 153.9 | PM10: 268.6 | Temp: 14.4C | Humidity: 60.9% | CO: 2.45ppm | AQI: 229 | NowCast: 247 | Risk: 48/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:56:02  INFO      Data Sent: [PM2.5: 193.5 | PM10: 372.0 | Temp: 12.4C | Humidity: 66.8% | CO: 5.99ppm | AQI: 268 | NowCast: 257 | Risk: 61/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:56:07  INFO      Data Sent: [PM2.5: 179.2 | PM10: 327.4 | Temp: 14.7C | Humidity: 57.5% | CO: 6.87ppm | AQI: 254 | NowCast: 256 | Risk: 58/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:56:12  INFO      Data Sent: [PM2.5: 178.2 | PM10: 363.3 | Temp: 16.5C | Humidity: 47.4% | CO: 5.40ppm | AQI: 253 | NowCast: 255 | Risk: 54/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:56:18  INFO      Data Sent: [PM2.5: 190.7 | PM10: 333.8 | Temp: 14.3C | Humidity: 41.1% | CO: 7.34ppm | AQI: 266 | NowCast: 260 | Risk: 56/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:56:23  INFO      Data Sent: [PM2.5: 280.5 | PM10: 532.8 | Temp: 11.4C | Humidity: 59.8% | CO: 3.53ppm | AQI: 411 | NowCast: 316 | Risk: 78/100 | Event: Normal | Hazardous]
+2026-03-03 17:56:28  INFO      Data Sent: [PM2.5: 193.5 | PM10: 348.3 | Temp: 13.1C | Humidity: 34.0% | CO: 7.86ppm | AQI: 268 | NowCast: 288 | Risk: 62/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:56:34  INFO      Data Sent: [PM2.5: 103.2 | PM10: 187.2 | Temp: 14.3C | Humidity: 25.6% | CO: 6.89ppm | AQI: 184 | NowCast: 246 | Risk: 35/100 | Event: Normal | Unhealthy]
+2026-03-03 17:56:39  INFO      Data Sent: [PM2.5: 149.5 | PM10: 269.3 | Temp: 14.7C | Humidity: 65.5% | CO: 9.05ppm | AQI: 225 | NowCast: 238 | Risk: 50/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:56:44  INFO      Data Sent: [PM2.5: 199.4 | PM10: 345.9 | Temp: 9.6C | Humidity: 37.2% | CO: 8.23ppm | AQI: 274 | NowCast: 251 | Risk: 63/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:56:49  INFO      Data Sent: [PM2.5: 150.5 | PM10: 258.1 | Temp: 13.6C | Humidity: 56.0% | CO: 4.73ppm | AQI: 226 | NowCast: 242 | Risk: 46/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:56:55  INFO      Data Sent: [PM2.5: 175.5 | PM10: 349.4 | Temp: 15.9C | Humidity: 52.4% | CO: 3.22ppm | AQI: 251 | NowCast: 245 | Risk: 54/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:57:00  INFO      Data Sent: [PM2.5: 159.3 | PM10: 304.1 | Temp: 15.7C | Humidity: 62.6% | CO: 7.69ppm | AQI: 234 | NowCast: 241 | Risk: 52/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:57:05  INFO      Data Sent: [PM2.5: 130.3 | PM10: 270.7 | Temp: 10.6C | Humidity: 48.3% | CO: 4.36ppm | AQI: 206 | NowCast: 228 | Risk: 44/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:57:11  INFO      Data Sent: [PM2.5: 168.9 | PM10: 329.2 | Temp: 11.4C | Humidity: 51.7% | CO: 8.57ppm | AQI: 244 | NowCast: 234 | Risk: 54/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:57:16  INFO      Data Sent: [PM2.5: 172.6 | PM10: 330.3 | Temp: 14.3C | Humidity: 39.0% | CO: 5.97ppm | AQI: 248 | NowCast: 239 | Risk: 57/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:57:21  INFO      Data Sent: [PM2.5: 131.7 | PM10: 269.8 | Temp: 13.5C | Humidity: 42.8% | CO: 5.72ppm | AQI: 207 | NowCast: 227 | Risk: 46/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:57:26  INFO      Data Sent: [PM2.5: 68.3 | PM10: 145.7 | Temp: 13.0C | Humidity: 58.4% | CO: 2.93ppm | AQI: 160 | NowCast: 198 | Risk: 27/100 | Event: Normal | Unhealthy]
+2026-03-03 17:57:32  INFO      Data Sent: [PM2.5: 110.1 | PM10: 212.4 | Temp: 15.0C | Humidity: 45.3% | CO: 9.46ppm | AQI: 189 | NowCast: 195 | Risk: 45/100 | Event: Normal | Unhealthy]
+2026-03-03 17:57:37  INFO      Data Sent: [PM2.5: 145.8 | PM10: 266.0 | Temp: 15.0C | Humidity: 62.0% | CO: 7.63ppm | AQI: 221 | NowCast: 203 | Risk: 51/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:57:42  INFO      Data Sent: [PM2.5: 212.1 | PM10: 397.9 | Temp: 13.6C | Humidity: 46.8% | CO: 4.59ppm | AQI: 287 | NowCast: 231 | Risk: 66/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:57:47  WARNING   POLLUTION EVENT: Brick Kiln Activity  (duration: 8 readings, ~40s)
+2026-03-03 17:57:48  INFO      Data Sent: [PM2.5: 507.9 | PM10: 1039.7 | Temp: 14.0C | Humidity: 60.1% | CO: 9.49ppm | AQI: 500 | NowCast: 281 | Risk: 83/100 | Event: Brick Kiln Activity | Hazardous]
+2026-03-03 17:57:53  INFO      Data Sent: [PM2.5: 743.7 | PM10: 1498.4 | Temp: 10.5C | Humidity: 52.8% | CO: 15.04ppm | AQI: 500 | NowCast: 392 | Risk: 88/100 | Event: Brick Kiln Activity | Hazardous]
+2026-03-03 17:57:58  INFO      Data Sent: [PM2.5: 711.1 | PM10: 1249.6 | Temp: 12.8C | Humidity: 58.3% | CO: 15.63ppm | AQI: 500 | NowCast: 500 | Risk: 86/100 | Event: Brick Kiln Activity | Hazardous]
+2026-03-03 17:58:03  INFO      Data Sent: [PM2.5: 684.4 | PM10: 1294.9 | Temp: 12.5C | Humidity: 44.8% | CO: 20.78ppm | AQI: 500 | NowCast: 500 | Risk: 91/100 | Event: Brick Kiln Activity | Hazardous]
+2026-03-03 17:58:09  INFO      Data Sent: [PM2.5: 569.2 | PM10: 1136.0 | Temp: 16.3C | Humidity: 58.9% | CO: 8.36ppm | AQI: 500 | NowCast: 500 | Risk: 87/100 | Event: Brick Kiln Activity | Hazardous]
+2026-03-03 17:58:14  INFO      Data Sent: [PM2.5: 715.6 | PM10: 1236.9 | Temp: 13.3C | Humidity: 36.3% | CO: 10.32ppm | AQI: 500 | NowCast: 500 | Risk: 89/100 | Event: Brick Kiln Activity | Hazardous]
+2026-03-03 17:58:19  INFO      Data Sent: [PM2.5: 567.0 | PM10: 1081.3 | Temp: 12.9C | Humidity: 39.9% | CO: 5.17ppm | AQI: 500 | NowCast: 500 | Risk: 87/100 | Event: Brick Kiln Activity | Hazardous]
+2026-03-03 17:58:25  INFO      Data Sent: [PM2.5: 517.5 | PM10: 1102.8 | Temp: 11.7C | Humidity: 48.1% | CO: 12.70ppm | AQI: 500 | NowCast: 500 | Risk: 89/100 | Event: Brick Kiln Activity | Hazardous]
+2026-03-03 17:58:30  INFO      Event ended: brick_kiln — returning to normal.
+2026-03-03 17:58:30  INFO      Data Sent: [PM2.5: 196.6 | PM10: 370.9 | Temp: 14.5C | Humidity: 48.0% | CO: 0.91ppm | AQI: 271 | NowCast: 500 | Risk: 59/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:58:35  WARNING   POLLUTION EVENT: Waste Burning  (duration: 11 readings, ~55s)
+2026-03-03 17:58:35  INFO      Data Sent: [PM2.5: 621.2 | PM10: 1169.9 | Temp: 13.5C | Humidity: 34.9% | CO: 29.02ppm | AQI: 500 | NowCast: 500 | Risk: 95/100 | Event: Waste Burning | Hazardous]
+2026-03-03 17:58:40  INFO      Data Sent: [PM2.5: 1263.8 | PM10: 2169.1 | Temp: 14.2C | Humidity: 35.5% | CO: 46.65ppm | AQI: 500 | NowCast: 500 | Risk: 100/100 | Event: Waste Burning | Hazardous]
+2026-03-03 17:58:46  INFO      Data Sent: [PM2.5: 827.1 | PM10: 1811.1 | Temp: 13.8C | Humidity: 41.5% | CO: 41.33ppm | AQI: 500 | NowCast: 500 | Risk: 100/100 | Event: Waste Burning | Hazardous]
+2026-03-03 17:58:51  INFO      Data Sent: [PM2.5: 973.4 | PM10: 2029.6 | Temp: 15.6C | Humidity: 47.2% | CO: 33.27ppm | AQI: 500 | NowCast: 500 | Risk: 99/100 | Event: Waste Burning | Hazardous]
+2026-03-03 17:58:56  INFO      Data Sent: [PM2.5: 956.6 | PM10: 2051.0 | Temp: 13.2C | Humidity: 40.4% | CO: 29.05ppm | AQI: 500 | NowCast: 500 | Risk: 94/100 | Event: Waste Burning | Hazardous]
+2026-03-03 17:59:02  INFO      Data Sent: [PM2.5: 612.2 | PM10: 1104.4 | Temp: 13.4C | Humidity: 56.9% | CO: 48.83ppm | AQI: 500 | NowCast: 500 | Risk: 99/100 | Event: Waste Burning | Hazardous]
+2026-03-03 17:59:07  INFO      Data Sent: [PM2.5: 860.2 | PM10: 1519.1 | Temp: 12.8C | Humidity: 56.9% | CO: 61.07ppm | AQI: 500 | NowCast: 500 | Risk: 100/100 | Event: Waste Burning | Hazardous]
+2026-03-03 17:59:12  INFO      Data Sent: [PM2.5: 577.5 | PM10: 1205.8 | Temp: 9.6C | Humidity: 58.5% | CO: 35.21ppm | AQI: 500 | NowCast: 500 | Risk: 96/100 | Event: Waste Burning | Hazardous]
+2026-03-03 17:59:17  INFO      Data Sent: [PM2.5: 888.2 | PM10: 1675.9 | Temp: 10.3C | Humidity: 49.0% | CO: 9.99ppm | AQI: 500 | NowCast: 500 | Risk: 89/100 | Event: Waste Burning | Hazardous]
+2026-03-03 17:59:23  INFO      Data Sent: [PM2.5: 846.7 | PM10: 1733.6 | Temp: 13.2C | Humidity: 75.6% | CO: 10.89ppm | AQI: 500 | NowCast: 500 | Risk: 87/100 | Event: Waste Burning | Hazardous]
+2026-03-03 17:59:28  INFO      Data Sent: [PM2.5: 618.9 | PM10: 1347.2 | Temp: 11.5C | Humidity: 56.0% | CO: 34.34ppm | AQI: 500 | NowCast: 500 | Risk: 100/100 | Event: Waste Burning | Hazardous]
+2026-03-03 17:59:33  INFO      Event ended: waste_burning — returning to normal.
+2026-03-03 17:59:33  INFO      Data Sent: [PM2.5: 156.9 | PM10: 298.1 | Temp: 13.5C | Humidity: 59.3% | CO: 6.88ppm | AQI: 232 | NowCast: 500 | Risk: 51/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:59:39  INFO      Data Sent: [PM2.5: 80.5 | PM10: 155.1 | Temp: 16.3C | Humidity: 58.9% | CO: 6.87ppm | AQI: 169 | NowCast: 500 | Risk: 32/100 | Event: Normal | Unhealthy]
+2026-03-03 17:59:44  INFO      Data Sent: [PM2.5: 98.8 | PM10: 208.6 | Temp: 16.7C | Humidity: 52.1% | CO: 10.48ppm | AQI: 181 | NowCast: 500 | Risk: 39/100 | Event: Normal | Unhealthy]
+2026-03-03 17:59:49  INFO      Data Sent: [PM2.5: 179.0 | PM10: 392.9 | Temp: 10.1C | Humidity: 53.0% | CO: 5.34ppm | AQI: 254 | NowCast: 500 | Risk: 54/100 | Event: Normal | Very Unhealthy]
+2026-03-03 17:59:54  INFO      Data Sent: [PM2.5: 189.8 | PM10: 400.0 | Temp: 11.8C | Humidity: 53.9% | CO: 2.62ppm | AQI: 265 | NowCast: 500 | Risk: 57/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:00:00  INFO      Data Sent: [PM2.5: 131.3 | PM10: 267.1 | Temp: 9.8C | Humidity: 67.2% | CO: 5.43ppm | AQI: 207 | NowCast: 500 | Risk: 46/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:00:05  INFO      Data Sent: [PM2.5: 106.9 | PM10: 182.3 | Temp: 12.0C | Humidity: 57.9% | CO: 6.53ppm | AQI: 187 | NowCast: 473 | Risk: 40/100 | Event: Normal | Unhealthy]
+2026-03-03 18:00:10  INFO      Data Sent: [PM2.5: 134.2 | PM10: 248.0 | Temp: 14.6C | Humidity: 59.4% | CO: 7.18ppm | AQI: 210 | NowCast: 379 | Risk: 46/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:00:16  INFO      Data Sent: [PM2.5: 111.2 | PM10: 241.9 | Temp: 13.9C | Humidity: 42.1% | CO: 2.35ppm | AQI: 190 | NowCast: 312 | Risk: 38/100 | Event: Normal | Unhealthy]
+2026-03-03 18:00:21  WARNING   POLLUTION EVENT: Dust Storm  (duration: 8 readings, ~40s)
+2026-03-03 18:00:21  INFO      Data Sent: [PM2.5: 387.7 | PM10: 837.4 | Temp: 14.7C | Humidity: 53.9% | CO: 7.16ppm | AQI: 500 | NowCast: 298 | Risk: 82/100 | Event: Dust Storm | Hazardous]
+2026-03-03 18:00:26  INFO      Data Sent: [PM2.5: 188.2 | PM10: 330.9 | Temp: 10.0C | Humidity: 61.9% | CO: 7.94ppm | AQI: 263 | NowCast: 267 | Risk: 59/100 | Event: Dust Storm | Very Unhealthy]
+2026-03-03 18:00:31  INFO      Data Sent: [PM2.5: 313.3 | PM10: 648.6 | Temp: 15.8C | Humidity: 59.2% | CO: 5.61ppm | AQI: 476 | NowCast: 291 | Risk: 83/100 | Event: Dust Storm | Hazardous]
+2026-03-03 18:00:37  INFO      Data Sent: [PM2.5: 573.0 | PM10: 1145.4 | Temp: 14.6C | Humidity: 24.5% | CO: 4.32ppm | AQI: 500 | NowCast: 379 | Risk: 83/100 | Event: Dust Storm | Hazardous]
+2026-03-03 18:00:42  INFO      Data Sent: [PM2.5: 504.9 | PM10: 1107.7 | Temp: 9.5C | Humidity: 55.2% | CO: 7.04ppm | AQI: 500 | NowCast: 500 | Risk: 85/100 | Event: Dust Storm | Hazardous]
+2026-03-03 18:00:47  INFO      Data Sent: [PM2.5: 422.7 | PM10: 912.7 | Temp: 13.8C | Humidity: 44.1% | CO: 4.17ppm | AQI: 500 | NowCast: 500 | Risk: 81/100 | Event: Dust Storm | Hazardous]
+2026-03-03 18:00:53  INFO      Data Sent: [PM2.5: 453.1 | PM10: 832.6 | Temp: 12.4C | Humidity: 53.9% | CO: 4.94ppm | AQI: 500 | NowCast: 500 | Risk: 86/100 | Event: Dust Storm | Hazardous]
+2026-03-03 18:00:58  INFO      Data Sent: [PM2.5: 636.6 | PM10: 1094.3 | Temp: 11.4C | Humidity: 55.6% | CO: 7.01ppm | AQI: 500 | NowCast: 500 | Risk: 82/100 | Event: Dust Storm | Hazardous]
+2026-03-03 18:01:03  INFO      Event ended: dust_storm — returning to normal.
+2026-03-03 18:01:03  INFO      Data Sent: [PM2.5: 170.5 | PM10: 343.5 | Temp: 11.3C | Humidity: 61.9% | CO: 6.41ppm | AQI: 246 | NowCast: 500 | Risk: 54/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:01:08  INFO      Data Sent: [PM2.5: 145.3 | PM10: 316.2 | Temp: 9.1C | Humidity: 50.5% | CO: 5.00ppm | AQI: 221 | NowCast: 500 | Risk: 45/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:01:14  INFO      Data Sent: [PM2.5: 151.9 | PM10: 284.6 | Temp: 14.8C | Humidity: 55.8% | CO: 5.95ppm | AQI: 227 | NowCast: 470 | Risk: 50/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:01:19  INFO      Data Sent: [PM2.5: 130.9 | PM10: 238.0 | Temp: 16.3C | Humidity: 31.5% | CO: 2.84ppm | AQI: 206 | NowCast: 382 | Risk: 39/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:01:24  INFO      Data Sent: [PM2.5: 230.4 | PM10: 490.3 | Temp: 13.1C | Humidity: 53.1% | CO: 7.65ppm | AQI: 311 | NowCast: 363 | Risk: 68/100 | Event: Normal | Hazardous]
+2026-03-03 18:01:30  INFO      Data Sent: [PM2.5: 134.2 | PM10: 255.7 | Temp: 12.6C | Humidity: 51.8% | CO: 7.04ppm | AQI: 210 | NowCast: 311 | Risk: 48/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:01:35  INFO      Data Sent: [PM2.5: 121.3 | PM10: 265.6 | Temp: 14.3C | Humidity: 64.4% | CO: 5.51ppm | AQI: 197 | NowCast: 286 | Risk: 44/100 | Event: Normal | Unhealthy]
+2026-03-03 18:01:40  INFO      Data Sent: [PM2.5: 237.8 | PM10: 433.4 | Temp: 14.2C | Humidity: 49.6% | CO: 4.72ppm | AQI: 326 | NowCast: 286 | Risk: 71/100 | Event: Normal | Hazardous]
+2026-03-03 18:01:45  INFO      Data Sent: [PM2.5: 129.7 | PM10: 259.2 | Temp: 12.6C | Humidity: 67.0% | CO: 9.48ppm | AQI: 205 | NowCast: 264 | Risk: 44/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:01:50  WARNING   POLLUTION EVENT: Brick Kiln Activity  (duration: 12 readings, ~60s)
+2026-03-03 18:01:51  INFO      Data Sent: [PM2.5: 502.6 | PM10: 898.4 | Temp: 11.6C | Humidity: 34.9% | CO: 9.41ppm | AQI: 500 | NowCast: 351 | Risk: 89/100 | Event: Brick Kiln Activity | Hazardous]
+2026-03-03 18:01:56  INFO      Data Sent: [PM2.5: 575.9 | PM10: 1250.0 | Temp: 15.3C | Humidity: 36.0% | CO: 14.90ppm | AQI: 500 | NowCast: 478 | Risk: 89/100 | Event: Brick Kiln Activity | Hazardous]
+2026-03-03 18:02:01  INFO      Data Sent: [PM2.5: 585.3 | PM10: 1095.7 | Temp: 12.4C | Humidity: 62.8% | CO: 16.44ppm | AQI: 500 | NowCast: 500 | Risk: 92/100 | Event: Brick Kiln Activity | Hazardous]
+2026-03-03 18:02:07  INFO      Data Sent: [PM2.5: 649.1 | PM10: 1141.1 | Temp: 14.8C | Humidity: 59.9% | CO: 21.87ppm | AQI: 500 | NowCast: 500 | Risk: 94/100 | Event: Brick Kiln Activity | Hazardous]
+2026-03-03 18:02:12  INFO      Data Sent: [PM2.5: 551.3 | PM10: 1105.2 | Temp: 14.8C | Humidity: 43.0% | CO: 20.97ppm | AQI: 500 | NowCast: 500 | Risk: 93/100 | Event: Brick Kiln Activity | Hazardous]
+2026-03-03 18:02:17  INFO      Data Sent: [PM2.5: 603.8 | PM10: 1174.7 | Temp: 12.1C | Humidity: 68.6% | CO: 21.38ppm | AQI: 500 | NowCast: 500 | Risk: 94/100 | Event: Brick Kiln Activity | Hazardous]
+2026-03-03 18:02:22  INFO      Data Sent: [PM2.5: 537.8 | PM10: 1110.2 | Temp: 10.9C | Humidity: 33.9% | CO: 15.86ppm | AQI: 500 | NowCast: 500 | Risk: 92/100 | Event: Brick Kiln Activity | Hazardous]
+2026-03-03 18:02:28  INFO      Data Sent: [PM2.5: 674.0 | PM10: 1249.8 | Temp: 17.3C | Humidity: 44.1% | CO: 16.00ppm | AQI: 500 | NowCast: 500 | Risk: 92/100 | Event: Brick Kiln Activity | Hazardous]
+2026-03-03 18:02:33  INFO      Data Sent: [PM2.5: 474.2 | PM10: 873.6 | Temp: 9.0C | Humidity: 62.5% | CO: 21.35ppm | AQI: 500 | NowCast: 500 | Risk: 94/100 | Event: Brick Kiln Activity | Hazardous]
+2026-03-03 18:02:38  INFO      Data Sent: [PM2.5: 492.4 | PM10: 1069.5 | Temp: 11.5C | Humidity: 66.3% | CO: 20.21ppm | AQI: 500 | NowCast: 500 | Risk: 94/100 | Event: Brick Kiln Activity | Hazardous]
+2026-03-03 18:02:44  INFO      Data Sent: [PM2.5: 553.6 | PM10: 1167.9 | Temp: 12.0C | Humidity: 43.3% | CO: 12.27ppm | AQI: 500 | NowCast: 500 | Risk: 90/100 | Event: Brick Kiln Activity | Hazardous]
+2026-03-03 18:02:49  INFO      Data Sent: [PM2.5: 612.6 | PM10: 1168.0 | Temp: 12.4C | Humidity: 60.9% | CO: 14.20ppm | AQI: 500 | NowCast: 500 | Risk: 89/100 | Event: Brick Kiln Activity | Hazardous]
+2026-03-03 18:02:54  INFO      Event ended: brick_kiln — returning to normal.
+2026-03-03 18:02:54  INFO      Data Sent: [PM2.5: 133.1 | PM10: 290.5 | Temp: 12.8C | Humidity: 36.0% | CO: 9.31ppm | AQI: 209 | NowCast: 500 | Risk: 46/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:02:59  INFO      Data Sent: [PM2.5: 143.7 | PM10: 267.4 | Temp: 12.9C | Humidity: 60.3% | CO: 5.69ppm | AQI: 219 | NowCast: 500 | Risk: 49/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:03:04  WARNING   POLLUTION EVENT: Traffic Jam  (duration: 6 readings, ~30s)
+2026-03-03 18:03:05  INFO      Data Sent: [PM2.5: 453.8 | PM10: 886.5 | Temp: 10.1C | Humidity: 67.3% | CO: 25.80ppm | AQI: 500 | NowCast: 500 | Risk: 96/100 | Event: Traffic Jam | Hazardous]
+2026-03-03 18:03:10  INFO      Data Sent: [PM2.5: 302.3 | PM10: 649.5 | Temp: 14.7C | Humidity: 50.2% | CO: 23.46ppm | AQI: 454 | NowCast: 500 | Risk: 93/100 | Event: Traffic Jam | Hazardous]
+2026-03-03 18:03:15  INFO      Data Sent: [PM2.5: 629.5 | PM10: 1311.1 | Temp: 15.6C | Humidity: 58.1% | CO: 21.65ppm | AQI: 500 | NowCast: 500 | Risk: 94/100 | Event: Traffic Jam | Hazardous]
+2026-03-03 18:03:21  INFO      Data Sent: [PM2.5: 550.4 | PM10: 1095.3 | Temp: 14.9C | Humidity: 44.4% | CO: 23.95ppm | AQI: 500 | NowCast: 500 | Risk: 95/100 | Event: Traffic Jam | Hazardous]
+2026-03-03 18:03:26  INFO      Data Sent: [PM2.5: 542.6 | PM10: 954.8 | Temp: 12.5C | Humidity: 35.9% | CO: 25.74ppm | AQI: 500 | NowCast: 500 | Risk: 96/100 | Event: Traffic Jam | Hazardous]
+2026-03-03 18:03:31  INFO      Data Sent: [PM2.5: 326.0 | PM10: 706.6 | Temp: 10.9C | Humidity: 42.0% | CO: 38.17ppm | AQI: 500 | NowCast: 500 | Risk: 100/100 | Event: Traffic Jam | Hazardous]
+2026-03-03 18:03:36  INFO      Event ended: traffic_jam — returning to normal.
+2026-03-03 18:03:37  INFO      Data Sent: [PM2.5: 193.1 | PM10: 335.0 | Temp: 15.1C | Humidity: 56.6% | CO: 8.18ppm | AQI: 268 | NowCast: 500 | Risk: 57/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:03:42  INFO      Data Sent: [PM2.5: 215.3 | PM10: 435.6 | Temp: 12.0C | Humidity: 55.5% | CO: 3.35ppm | AQI: 290 | NowCast: 500 | Risk: 67/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:03:47  INFO      Data Sent: [PM2.5: 224.6 | PM10: 425.9 | Temp: 12.5C | Humidity: 52.7% | CO: 5.38ppm | AQI: 299 | NowCast: 479 | Risk: 65/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:03:52  INFO      Data Sent: [PM2.5: 193.8 | PM10: 413.2 | Temp: 9.8C | Humidity: 32.0% | CO: 6.40ppm | AQI: 269 | NowCast: 417 | Risk: 59/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:03:58  INFO      Data Sent: [PM2.5: 213.9 | PM10: 428.7 | Temp: 10.8C | Humidity: 42.2% | CO: 5.03ppm | AQI: 289 | NowCast: 380 | Risk: 66/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:04:03  INFO      Data Sent: [PM2.5: 186.3 | PM10: 369.0 | Temp: 13.0C | Humidity: 40.1% | CO: 5.34ppm | AQI: 261 | NowCast: 308 | Risk: 57/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:04:08  INFO      Data Sent: [PM2.5: 101.4 | PM10: 188.8 | Temp: 10.6C | Humidity: 57.6% | CO: 7.33ppm | AQI: 183 | NowCast: 321 | Risk: 36/100 | Event: Normal | Unhealthy]
+2026-03-03 18:04:14  INFO      Data Sent: [PM2.5: 186.9 | PM10: 344.6 | Temp: 13.3C | Humidity: 40.2% | CO: 5.30ppm | AQI: 262 | NowCast: 300 | Risk: 56/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:04:19  INFO      Data Sent: [PM2.5: 179.0 | PM10: 329.5 | Temp: 9.9C | Humidity: 53.9% | CO: 5.95ppm | AQI: 254 | NowCast: 277 | Risk: 60/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:04:24  INFO      Data Sent: [PM2.5: 140.8 | PM10: 309.3 | Temp: 10.3C | Humidity: 47.6% | CO: 8.92ppm | AQI: 216 | NowCast: 258 | Risk: 49/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:04:29  INFO      Data Sent: [PM2.5: 134.0 | PM10: 264.2 | Temp: 11.7C | Humidity: 59.0% | CO: 6.51ppm | AQI: 209 | NowCast: 231 | Risk: 46/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:04:35  INFO      Data Sent: [PM2.5: 190.4 | PM10: 405.2 | Temp: 9.2C | Humidity: 44.2% | CO: 4.50ppm | AQI: 265 | NowCast: 242 | Risk: 59/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:04:40  INFO      Data Sent: [PM2.5: 172.8 | PM10: 353.1 | Temp: 14.0C | Humidity: 53.0% | CO: 4.97ppm | AQI: 248 | NowCast: 245 | Risk: 57/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:04:45  INFO      Data Sent: [PM2.5: 171.2 | PM10: 337.4 | Temp: 15.8C | Humidity: 46.2% | CO: 6.87ppm | AQI: 246 | NowCast: 245 | Risk: 54/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:04:51  INFO      Data Sent: [PM2.5: 184.8 | PM10: 357.0 | Temp: 11.1C | Humidity: 31.3% | CO: 4.87ppm | AQI: 260 | NowCast: 252 | Risk: 53/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:04:56  INFO      Data Sent: [PM2.5: 203.7 | PM10: 354.0 | Temp: 12.0C | Humidity: 44.1% | CO: 5.54ppm | AQI: 278 | NowCast: 265 | Risk: 66/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:05:01  INFO      Data Sent: [PM2.5: 171.4 | PM10: 339.3 | Temp: 13.2C | Humidity: 59.2% | CO: 4.37ppm | AQI: 246 | NowCast: 256 | Risk: 53/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:05:06  WARNING   POLLUTION EVENT: Brick Kiln Activity  (duration: 9 readings, ~45s)
+2026-03-03 18:05:06  INFO      Data Sent: [PM2.5: 336.2 | PM10: 728.6 | Temp: 14.6C | Humidity: 62.8% | CO: 16.38ppm | AQI: 500 | NowCast: 304 | Risk: 87/100 | Event: Brick Kiln Activity | Hazardous]
+2026-03-03 18:05:12  INFO      Data Sent: [PM2.5: 626.1 | PM10: 1271.9 | Temp: 10.5C | Humidity: 65.1% | CO: 12.26ppm | AQI: 500 | NowCast: 465 | Risk: 89/100 | Event: Brick Kiln Activity | Hazardous]
+2026-03-03 18:05:17  INFO      Data Sent: [PM2.5: 483.9 | PM10: 850.7 | Temp: 9.1C | Humidity: 48.4% | CO: 12.48ppm | AQI: 500 | NowCast: 500 | Risk: 89/100 | Event: Brick Kiln Activity | Hazardous]
+2026-03-03 18:05:22  INFO      Data Sent: [PM2.5: 660.7 | PM10: 1147.2 | Temp: 12.1C | Humidity: 48.5% | CO: 19.23ppm | AQI: 500 | NowCast: 500 | Risk: 93/100 | Event: Brick Kiln Activity | Hazardous]
+2026-03-03 18:05:28  INFO      Data Sent: [PM2.5: 602.2 | PM10: 1106.5 | Temp: 12.9C | Humidity: 41.9% | CO: 13.57ppm | AQI: 500 | NowCast: 500 | Risk: 85/100 | Event: Brick Kiln Activity | Hazardous]
+2026-03-03 18:05:33  INFO      Data Sent: [PM2.5: 406.0 | PM10: 860.8 | Temp: 14.4C | Humidity: 62.2% | CO: 10.58ppm | AQI: 500 | NowCast: 500 | Risk: 90/100 | Event: Brick Kiln Activity | Hazardous]
+2026-03-03 18:05:38  INFO      Data Sent: [PM2.5: 529.8 | PM10: 1039.5 | Temp: 14.2C | Humidity: 48.4% | CO: 16.03ppm | AQI: 500 | NowCast: 500 | Risk: 91/100 | Event: Brick Kiln Activity | Hazardous]
+2026-03-03 18:05:43  INFO      Data Sent: [PM2.5: 449.9 | PM10: 765.5 | Temp: 11.6C | Humidity: 51.1% | CO: 16.57ppm | AQI: 500 | NowCast: 500 | Risk: 92/100 | Event: Brick Kiln Activity | Hazardous]
+2026-03-03 18:05:49  INFO      Data Sent: [PM2.5: 650.6 | PM10: 1409.8 | Temp: 6.7C | Humidity: 65.9% | CO: 16.75ppm | AQI: 500 | NowCast: 500 | Risk: 92/100 | Event: Brick Kiln Activity | Hazardous]
+2026-03-03 18:05:54  INFO      Event ended: brick_kiln — returning to normal.
+2026-03-03 18:05:54  INFO      Data Sent: [PM2.5: 211.9 | PM10: 446.6 | Temp: 10.8C | Humidity: 38.4% | CO: 6.26ppm | AQI: 287 | NowCast: 500 | Risk: 65/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:05:59  INFO      Data Sent: [PM2.5: 185.5 | PM10: 326.8 | Temp: 14.2C | Humidity: 55.5% | CO: 6.77ppm | AQI: 260 | NowCast: 500 | Risk: 60/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:06:05  INFO      Data Sent: [PM2.5: 156.2 | PM10: 336.4 | Temp: 10.1C | Humidity: 49.7% | CO: 6.13ppm | AQI: 231 | NowCast: 500 | Risk: 50/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:06:10  INFO      Data Sent: [PM2.5: 74.1 | PM10: 159.7 | Temp: 17.3C | Humidity: 54.2% | CO: 5.98ppm | AQI: 164 | NowCast: 500 | Risk: 29/100 | Event: Normal | Unhealthy]
+2026-03-03 18:06:15  INFO      Data Sent: [PM2.5: 121.4 | PM10: 237.1 | Temp: 14.7C | Humidity: 42.7% | CO: 2.25ppm | AQI: 197 | NowCast: 462 | Risk: 42/100 | Event: Normal | Unhealthy]
+2026-03-03 18:06:20  INFO      Data Sent: [PM2.5: 140.1 | PM10: 251.5 | Temp: 14.9C | Humidity: 58.5% | CO: 5.30ppm | AQI: 215 | NowCast: 401 | Risk: 45/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:06:26  INFO      Data Sent: [PM2.5: 125.4 | PM10: 242.7 | Temp: 12.9C | Humidity: 48.6% | CO: 5.04ppm | AQI: 200 | NowCast: 327 | Risk: 44/100 | Event: Normal | Unhealthy]
+2026-03-03 18:06:31  INFO      Data Sent: [PM2.5: 133.1 | PM10: 247.1 | Temp: 8.6C | Humidity: 44.4% | CO: 4.11ppm | AQI: 209 | NowCast: 285 | Risk: 42/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:06:36  INFO      Data Sent: [PM2.5: 188.0 | PM10: 357.6 | Temp: 12.9C | Humidity: 61.6% | CO: 7.16ppm | AQI: 263 | NowCast: 275 | Risk: 59/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:06:42  INFO      Data Sent: [PM2.5: 136.3 | PM10: 267.1 | Temp: 12.0C | Humidity: 56.4% | CO: 3.43ppm | AQI: 212 | NowCast: 254 | Risk: 44/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:06:47  INFO      Data Sent: [PM2.5: 160.0 | PM10: 333.4 | Temp: 14.5C | Humidity: 45.5% | CO: 5.83ppm | AQI: 235 | NowCast: 242 | Risk: 52/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:06:52  INFO      Data Sent: [PM2.5: 148.5 | PM10: 304.8 | Temp: 13.3C | Humidity: 51.6% | CO: 3.65ppm | AQI: 224 | NowCast: 225 | Risk: 44/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:06:57  INFO      Data Sent: [PM2.5: 139.7 | PM10: 284.8 | Temp: 14.8C | Humidity: 51.5% | CO: 2.07ppm | AQI: 215 | NowCast: 222 | Risk: 44/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:07:03  INFO      Data Sent: [PM2.5: 178.2 | PM10: 378.2 | Temp: 13.5C | Humidity: 29.5% | CO: 4.95ppm | AQI: 253 | NowCast: 234 | Risk: 58/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:07:08  INFO      Data Sent: [PM2.5: 100.7 | PM10: 176.6 | Temp: 16.1C | Humidity: 49.0% | CO: 6.94ppm | AQI: 183 | NowCast: 211 | Risk: 38/100 | Event: Normal | Unhealthy]
+2026-03-03 18:07:13  INFO      Data Sent: [PM2.5: 159.2 | PM10: 328.9 | Temp: 19.3C | Humidity: 37.5% | CO: 4.54ppm | AQI: 234 | NowCast: 221 | Risk: 51/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:07:19  INFO      Data Sent: [PM2.5: 95.4 | PM10: 162.4 | Temp: 13.7C | Humidity: 69.4% | CO: 5.26ppm | AQI: 179 | NowCast: 196 | Risk: 32/100 | Event: Normal | Unhealthy]
+2026-03-03 18:07:24  INFO      Data Sent: [PM2.5: 89.7 | PM10: 157.7 | Temp: 10.7C | Humidity: 53.0% | CO: 7.47ppm | AQI: 175 | NowCast: 187 | Risk: 38/100 | Event: Normal | Unhealthy]
+2026-03-03 18:07:29  INFO      Data Sent: [PM2.5: 223.7 | PM10: 433.4 | Temp: 11.9C | Humidity: 26.2% | CO: 4.67ppm | AQI: 298 | NowCast: 231 | Risk: 68/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:07:34  INFO      Data Sent: [PM2.5: 146.3 | PM10: 256.6 | Temp: 13.1C | Humidity: 64.6% | CO: 4.82ppm | AQI: 222 | NowCast: 227 | Risk: 48/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:07:40  INFO      Data Sent: [PM2.5: 162.9 | PM10: 302.7 | Temp: 7.6C | Humidity: 43.6% | CO: 6.88ppm | AQI: 238 | NowCast: 232 | Risk: 53/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:07:45  WARNING   POLLUTION EVENT: Brick Kiln Activity  (duration: 9 readings, ~45s)
+2026-03-03 18:07:45  INFO      Data Sent: [PM2.5: 291.2 | PM10: 517.5 | Temp: 11.5C | Humidity: 39.5% | CO: 18.64ppm | AQI: 432 | NowCast: 271 | Risk: 89/100 | Event: Brick Kiln Activity | Hazardous]
+2026-03-03 18:07:50  INFO      Data Sent: [PM2.5: 571.1 | PM10: 994.7 | Temp: 12.4C | Humidity: 49.2% | CO: 11.34ppm | AQI: 500 | NowCast: 342 | Risk: 90/100 | Event: Brick Kiln Activity | Hazardous]
+2026-03-03 18:07:56  INFO      Data Sent: [PM2.5: 574.5 | PM10: 1174.3 | Temp: 15.8C | Humidity: 59.4% | CO: 8.31ppm | AQI: 500 | NowCast: 463 | Risk: 89/100 | Event: Brick Kiln Activity | Hazardous]
+2026-03-03 18:08:01  INFO      Data Sent: [PM2.5: 414.0 | PM10: 779.6 | Temp: 13.0C | Humidity: 58.4% | CO: 10.65ppm | AQI: 500 | NowCast: 500 | Risk: 88/100 | Event: Brick Kiln Activity | Hazardous]
+2026-03-03 18:08:06  INFO      Data Sent: [PM2.5: 620.1 | PM10: 1359.9 | Temp: 11.4C | Humidity: 64.6% | CO: 17.95ppm | AQI: 500 | NowCast: 500 | Risk: 90/100 | Event: Brick Kiln Activity | Hazardous]
+2026-03-03 18:08:11  INFO      Data Sent: [PM2.5: 380.6 | PM10: 782.1 | Temp: 15.1C | Humidity: 70.0% | CO: 16.47ppm | AQI: 500 | NowCast: 500 | Risk: 92/100 | Event: Brick Kiln Activity | Hazardous]
+2026-03-03 18:08:17  INFO      Data Sent: [PM2.5: 376.8 | PM10: 653.6 | Temp: 13.5C | Humidity: 47.7% | CO: 10.67ppm | AQI: 500 | NowCast: 500 | Risk: 90/100 | Event: Brick Kiln Activity | Hazardous]
+2026-03-03 18:08:22  INFO      Data Sent: [PM2.5: 576.3 | PM10: 1068.2 | Temp: 11.7C | Humidity: 71.7% | CO: 14.39ppm | AQI: 500 | NowCast: 500 | Risk: 84/100 | Event: Brick Kiln Activity | Hazardous]
+2026-03-03 18:08:27  INFO      Data Sent: [PM2.5: 458.1 | PM10: 981.0 | Temp: 12.4C | Humidity: 58.9% | CO: 14.45ppm | AQI: 500 | NowCast: 500 | Risk: 87/100 | Event: Brick Kiln Activity | Hazardous]
+2026-03-03 18:08:32  INFO      Event ended: brick_kiln — returning to normal.
+2026-03-03 18:08:33  INFO      Data Sent: [PM2.5: 148.6 | PM10: 296.7 | Temp: 11.1C | Humidity: 42.8% | CO: 3.17ppm | AQI: 224 | NowCast: 500 | Risk: 48/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:08:38  INFO      Data Sent: [PM2.5: 109.1 | PM10: 219.9 | Temp: 10.7C | Humidity: 43.3% | CO: 4.39ppm | AQI: 189 | NowCast: 500 | Risk: 37/100 | Event: Normal | Unhealthy]
+2026-03-03 18:08:43  INFO      Data Sent: [PM2.5: 185.3 | PM10: 354.2 | Temp: 10.7C | Humidity: 60.5% | CO: 8.26ppm | AQI: 260 | NowCast: 484 | Risk: 62/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:08:48  INFO      Data Sent: [PM2.5: 112.8 | PM10: 235.0 | Temp: 13.1C | Humidity: 53.6% | CO: 2.64ppm | AQI: 191 | NowCast: 405 | Risk: 36/100 | Event: Normal | Unhealthy]
+2026-03-03 18:08:54  INFO      Data Sent: [PM2.5: 108.8 | PM10: 234.8 | Temp: 9.7C | Humidity: 51.0% | CO: 3.50ppm | AQI: 188 | NowCast: 329 | Risk: 39/100 | Event: Normal | Unhealthy]
+2026-03-03 18:08:59  INFO      Data Sent: [PM2.5: 183.6 | PM10: 364.9 | Temp: 13.6C | Humidity: 57.7% | CO: 6.87ppm | AQI: 259 | NowCast: 297 | Risk: 57/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:09:04  INFO      Data Sent: [PM2.5: 147.3 | PM10: 270.0 | Temp: 11.2C | Humidity: 51.1% | CO: 5.39ppm | AQI: 223 | NowCast: 279 | Risk: 47/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:09:10  INFO      Data Sent: [PM2.5: 232.2 | PM10: 403.8 | Temp: 12.0C | Humidity: 47.6% | CO: 5.02ppm | AQI: 314 | NowCast: 274 | Risk: 66/100 | Event: Normal | Hazardous]
+2026-03-03 18:09:15  INFO      Data Sent: [PM2.5: 172.8 | PM10: 295.5 | Temp: 12.1C | Humidity: 41.2% | CO: 5.67ppm | AQI: 248 | NowCast: 265 | Risk: 56/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:09:20  INFO      Data Sent: [PM2.5: 174.7 | PM10: 361.8 | Temp: 11.9C | Humidity: 43.7% | CO: 5.79ppm | AQI: 250 | NowCast: 259 | Risk: 52/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:09:25  INFO      Data Sent: [PM2.5: 184.5 | PM10: 384.9 | Temp: 14.4C | Humidity: 52.0% | CO: 6.60ppm | AQI: 259 | NowCast: 253 | Risk: 55/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:09:31  INFO      Data Sent: [PM2.5: 114.3 | PM10: 200.8 | Temp: 11.9C | Humidity: 59.4% | CO: 5.38ppm | AQI: 192 | NowCast: 225 | Risk: 39/100 | Event: Normal | Unhealthy]
+2026-03-03 18:09:36  INFO      Data Sent: [PM2.5: 88.9 | PM10: 154.5 | Temp: 14.1C | Humidity: 62.5% | CO: 7.90ppm | AQI: 174 | NowCast: 205 | Risk: 37/100 | Event: Normal | Unhealthy]
+2026-03-03 18:09:41  INFO      Data Sent: [PM2.5: 200.8 | PM10: 364.2 | Temp: 13.7C | Humidity: 64.1% | CO: 6.50ppm | AQI: 276 | NowCast: 232 | Risk: 60/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:09:47  INFO      Data Sent: [PM2.5: 210.1 | PM10: 414.2 | Temp: 9.8C | Humidity: 46.2% | CO: 7.47ppm | AQI: 285 | NowCast: 252 | Risk: 66/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:09:52  INFO      Data Sent: [PM2.5: 171.5 | PM10: 299.5 | Temp: 14.7C | Humidity: 69.1% | CO: 0.86ppm | AQI: 247 | NowCast: 250 | Risk: 53/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:09:57  INFO      Data Sent: [PM2.5: 176.4 | PM10: 316.1 | Temp: 12.1C | Humidity: 59.3% | CO: 4.77ppm | AQI: 251 | NowCast: 251 | Risk: 55/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:10:02  INFO      Data Sent: [PM2.5: 126.8 | PM10: 269.3 | Temp: 14.7C | Humidity: 52.1% | CO: 9.05ppm | AQI: 202 | NowCast: 232 | Risk: 44/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:10:08  INFO      Data Sent: [PM2.5: 191.6 | PM10: 359.7 | Temp: 10.8C | Humidity: 68.2% | CO: 8.57ppm | AQI: 267 | NowCast: 245 | Risk: 58/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:10:13  INFO      Data Sent: [PM2.5: 227.5 | PM10: 489.0 | Temp: 12.1C | Humidity: 53.5% | CO: 8.10ppm | AQI: 305 | NowCast: 267 | Risk: 66/100 | Event: Normal | Hazardous]
+2026-03-03 18:10:18  INFO      Data Sent: [PM2.5: 152.9 | PM10: 320.0 | Temp: 12.5C | Humidity: 68.4% | CO: 6.24ppm | AQI: 228 | NowCast: 252 | Risk: 50/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:10:24  INFO      Data Sent: [PM2.5: 122.8 | PM10: 243.2 | Temp: 12.9C | Humidity: 61.7% | CO: 4.23ppm | AQI: 198 | NowCast: 231 | Risk: 40/100 | Event: Normal | Unhealthy]
+2026-03-03 18:10:29  INFO      Data Sent: [PM2.5: 169.2 | PM10: 353.5 | Temp: 15.5C | Humidity: 55.1% | CO: 1.94ppm | AQI: 244 | NowCast: 236 | Risk: 50/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:10:34  INFO      Data Sent: [PM2.5: 101.4 | PM10: 190.3 | Temp: 11.7C | Humidity: 64.7% | CO: 7.08ppm | AQI: 183 | NowCast: 213 | Risk: 40/100 | Event: Normal | Unhealthy]
+2026-03-03 18:10:39  INFO      Data Sent: [PM2.5: 225.9 | PM10: 402.3 | Temp: 13.7C | Humidity: 56.6% | CO: 6.93ppm | AQI: 302 | NowCast: 250 | Risk: 66/100 | Event: Normal | Hazardous]
+2026-03-03 18:10:45  INFO      Data Sent: [PM2.5: 123.3 | PM10: 216.5 | Temp: 15.6C | Humidity: 46.0% | CO: 3.19ppm | AQI: 199 | NowCast: 227 | Risk: 39/100 | Event: Normal | Unhealthy]
+2026-03-03 18:10:50  INFO      Data Sent: [PM2.5: 199.0 | PM10: 352.6 | Temp: 15.2C | Humidity: 55.0% | CO: 5.22ppm | AQI: 274 | NowCast: 248 | Risk: 60/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:10:55  INFO      Data Sent: [PM2.5: 167.8 | PM10: 329.3 | Temp: 10.0C | Humidity: 59.8% | CO: 6.08ppm | AQI: 243 | NowCast: 246 | Risk: 55/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:11:01  INFO      Data Sent: [PM2.5: 148.2 | PM10: 262.8 | Temp: 13.6C | Humidity: 88.7% | CO: 4.25ppm | AQI: 223 | NowCast: 236 | Risk: 47/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:11:06  INFO      Data Sent: [PM2.5: 121.3 | PM10: 240.1 | Temp: 12.0C | Humidity: 59.8% | CO: 8.59ppm | AQI: 197 | NowCast: 218 | Risk: 43/100 | Event: Normal | Unhealthy]
+2026-03-03 18:11:11  INFO      Data Sent: [PM2.5: 139.5 | PM10: 272.0 | Temp: 11.2C | Humidity: 67.1% | CO: 3.61ppm | AQI: 215 | NowCast: 217 | Risk: 46/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:11:16  INFO      Data Sent: [PM2.5: 198.4 | PM10: 367.4 | Temp: 10.8C | Humidity: 55.5% | CO: 7.79ppm | AQI: 273 | NowCast: 242 | Risk: 62/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:11:22  INFO      Data Sent: [PM2.5: 164.1 | PM10: 303.4 | Temp: 12.8C | Humidity: 60.6% | CO: 5.75ppm | AQI: 239 | NowCast: 241 | Risk: 54/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:11:27  INFO      Data Sent: [PM2.5: 143.0 | PM10: 252.0 | Temp: 14.0C | Humidity: 44.9% | CO: 4.04ppm | AQI: 218 | NowCast: 231 | Risk: 43/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:11:32  INFO      Data Sent: [PM2.5: 186.4 | PM10: 342.6 | Temp: 13.7C | Humidity: 38.4% | CO: 6.21ppm | AQI: 261 | NowCast: 244 | Risk: 60/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:11:38  INFO      Data Sent: [PM2.5: 107.5 | PM10: 188.2 | Temp: 10.1C | Humidity: 56.5% | CO: 6.09ppm | AQI: 187 | NowCast: 216 | Risk: 41/100 | Event: Normal | Unhealthy]
+2026-03-03 18:11:43  INFO      Data Sent: [PM2.5: 226.1 | PM10: 452.7 | Temp: 16.1C | Humidity: 59.9% | CO: 10.03ppm | AQI: 302 | NowCast: 256 | Risk: 74/100 | Event: Normal | Hazardous]
+2026-03-03 18:11:48  INFO      Data Sent: [PM2.5: 126.1 | PM10: 269.7 | Temp: 9.1C | Humidity: 52.4% | CO: 9.68ppm | AQI: 202 | NowCast: 230 | Risk: 46/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:11:53  INFO      Data Sent: [PM2.5: 205.6 | PM10: 420.6 | Temp: 9.1C | Humidity: 59.7% | CO: 4.53ppm | AQI: 280 | NowCast: 254 | Risk: 64/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:11:59  INFO      Data Sent: [PM2.5: 134.5 | PM10: 283.5 | Temp: 10.6C | Humidity: 62.4% | CO: 4.63ppm | AQI: 210 | NowCast: 233 | Risk: 49/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:12:04  INFO      Data Sent: [PM2.5: 178.9 | PM10: 338.1 | Temp: 10.3C | Humidity: 63.2% | CO: 8.27ppm | AQI: 254 | NowCast: 243 | Risk: 56/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:12:09  INFO      Data Sent: [PM2.5: 156.5 | PM10: 338.5 | Temp: 15.2C | Humidity: 47.1% | CO: 6.58ppm | AQI: 232 | NowCast: 238 | Risk: 48/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:12:15  INFO      Data Sent: [PM2.5: 169.4 | PM10: 309.4 | Temp: 11.8C | Humidity: 31.0% | CO: 6.22ppm | AQI: 245 | NowCast: 241 | Risk: 57/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:12:20  INFO      Data Sent: [PM2.5: 212.8 | PM10: 456.7 | Temp: 9.9C | Humidity: 38.1% | CO: 6.66ppm | AQI: 288 | NowCast: 263 | Risk: 68/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:12:25  INFO      Data Sent: [PM2.5: 172.4 | PM10: 304.0 | Temp: 10.5C | Humidity: 37.8% | CO: 9.07ppm | AQI: 247 | NowCast: 256 | Risk: 56/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:12:31  INFO      Data Sent: [PM2.5: 184.0 | PM10: 376.7 | Temp: 12.7C | Humidity: 61.3% | CO: 6.18ppm | AQI: 259 | NowCast: 257 | Risk: 57/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:12:36  INFO      Data Sent: [PM2.5: 124.3 | PM10: 228.9 | Temp: 14.0C | Humidity: 52.4% | CO: 6.98ppm | AQI: 199 | NowCast: 230 | Risk: 39/100 | Event: Normal | Unhealthy]
+2026-03-03 18:12:41  INFO      Data Sent: [PM2.5: 168.7 | PM10: 292.9 | Temp: 12.0C | Humidity: 71.3% | CO: 1.76ppm | AQI: 244 | NowCast: 236 | Risk: 54/100 | Event: Normal | Very Unhealthy]
+2026-03-03 18:12:46  WARNING   POLLUTION EVENT: Brick Kiln Activity  (duration: 12 readings, ~60s)
+2026-03-03 18:12:47  INFO      Data Sent: [PM2.5: 520.3 | PM10: 1000.7 | Temp: 12.8C | Humidity: 48.2% | CO: 17.25ppm | AQI: 500 | NowCast: 357 | Risk: 91/100 | Event: Brick Kiln Activity | Hazardous]
+2026-03-03 18:12:48  INFO      MQTT disconnected cleanly.
