@@ -387,5 +387,5 @@ Chart history and the last full data snapshot are persisted to
 <hr>
 
 <p> 
-Taylor's University  |  Jan 2026
+
 </p>
