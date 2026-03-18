@@ -1,195 +1,222 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kathmandu AQ — Group 15 Live Monitor</title>
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-
-  <!-- Leaflet CSS -->
+  <title>Kathmandu AQ &mdash; Group 15 Live Monitor</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
-
-  <!-- Dashboard styles -->
   <link rel="stylesheet" href="css/style.css">
-
-  <!-- Chart.js + Leaflet JS (loaded in head so they're ready before our scripts) -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 </head>
 <body>
 <div class="wrap">
 
-<!-- TOPBAR -->
 <header class="topbar">
   <div class="brand">
-    <div class="brand-icon">🌫️</div>
+    <div class="brand-icon">AQ</div>
     <div>
       <div class="brand-name">Kathmandu Valley Air Quality Monitor</div>
-      <div class="brand-sub">Group 15 · ITS67404 IoT · Taylor's University · Jan 2026</div>
+      <div class="brand-sub">Group 15 &middot; ITS67404 IoT &middot; Taylor's University &middot; Jan 2026</div>
     </div>
   </div>
   <div class="topbar-right">
-    <div class="pill pill-live"><div class="dot"></div>LIVE DATA</div>
+    <div class="pill pill-live"><div class="dot"></div>LIVE</div>
+    <div class="theme-toggle-wrap">
+      <span id="theme-lbl">Light</span>
+      <button class="theme-toggle" id="theme-btn" aria-label="Toggle theme"></button>
+    </div>
     <div id="clock">--:--:--</div>
   </div>
 </header>
 
-<!-- CONFIG -->
 <div class="config">
   <label>Proxy</label>
-  <input id="host" value="http://localhost:8765" readonly style="color:var(--muted);width:180px">
+  <input id="host" value="http://localhost:8765" readonly style="color:var(--muted)">
   <label>Interval</label>
   <select id="interval">
-    <option value="1000">1s</option>
     <option value="5000">5s</option>
     <option value="10000">10s</option>
-    <option value="15000">15s</option>
     <option value="30000">30s</option>
     <option value="60000" selected>1m</option>
   </select>
-  <button class="btn btn-primary" onclick="startFetch()">▶ Connect</button>
-  <button class="btn btn-stop"    onclick="stopFetch()">■ Stop</button>
+  <button class="btn btn-primary" onclick="startFetch()">Connect</button>
+  <button class="btn btn-stop"    onclick="stopFetch()">Stop</button>
   <span id="msg">Click Connect to start</span>
 </div>
 
-<!-- TICKER -->
-<div class="ticker-wrap">
-  <div class="ticker-inner" id="ticker-text">Waiting for data ···</div>
+<div class="ticker-wrap" aria-hidden="true">
+  <div class="ticker-inner" id="ticker-text">Waiting for data &middot;&middot;&middot;</div>
 </div>
 
-<main>
-
-  <!-- KPIs -->
-  <div>
-    <div class="sh"><span class="sh-label">Network Overview</span><div class="sh-line"></div></div>
-    <div class="kpi-row">
-      <div class="kpi"><div class="kpi-icon">📡</div><div class="kpi-val" id="k-nodes">0/5</div><div class="kpi-lbl">Nodes Online</div></div>
-      <div class="kpi"><div class="kpi-icon">🌫️</div><div class="kpi-val" id="k-aqi">—</div>  <div class="kpi-lbl">Avg AQI</div></div>
-      <div class="kpi"><div class="kpi-icon">💨</div><div class="kpi-val" id="k-pm25">—</div> <div class="kpi-lbl">Avg PM2.5 µg/m³</div></div>
-      <div class="kpi"><div class="kpi-icon">🌡️</div><div class="kpi-val" id="k-temp">—</div> <div class="kpi-lbl">Avg Temp °C</div></div>
-      <div class="kpi"><div class="kpi-icon">🔔</div><div class="kpi-val" id="k-alarm">0</div><div class="kpi-lbl">Active Alarms</div></div>
+<!-- TAB NAV — 2 panels -->
+<nav class="tab-nav" role="tablist">
+  <button class="tab-btn active" role="tab" data-panel="0" aria-selected="true">Overview</button>
+  <button class="tab-btn"        role="tab" data-panel="1">Map &amp; Alerts</button>
+  <div class="tab-nav-right">
+    <button class="nav-arrow" id="nav-prev">&lsaquo;</button>
+    <div class="step-dots">
+      <div class="step-dot active" data-panel="0"></div>
+      <div class="step-dot"        data-panel="1"></div>
     </div>
+    <button class="nav-arrow" id="nav-next">&rsaquo;</button>
+    <span id="last-update" style="font-family:var(--mono);font-size:8px;color:var(--muted);margin-left:8px">&mdash;</span>
   </div>
+</nav>
 
-  <!-- GAUGES -->
-  <div>
-    <div class="sh"><span class="sh-label">AQI Gauges — Per Node</span><div class="sh-line"></div></div>
-    <div class="gauge-row" id="gauge-row"></div>
-  </div>
+<div class="stage">
+<div class="panels" id="panels">
 
-  <!-- MAP + AQI SCALE -->
-  <div>
-    <div class="sh"><span class="sh-label">Live Map — Kathmandu Valley</span><div class="sh-line"></div></div>
-    <div class="map-row">
-      <div class="cc" style="padding:14px">
-        <div class="cc-title" style="margin-bottom:10px">Node Locations · Live AQI</div>
+  <!-- ═══ PANEL 0 · OVERVIEW ═══════════════════════════════════ -->
+  <section class="panel" role="tabpanel" aria-label="Overview">
+
+    <!-- KPI stat bar -->
+    <div class="kpi-bar" id="kpi-row"></div>
+
+    <!-- 3×2 chart grid fills the rest -->
+    <div class="chart-grid">
+
+      <div class="cc">
+        <div class="cc-title">PM2.5 <span class="cc-sub-inline">&micro;g/m&sup3; &middot; rolling 20 &middot; WHO=15</span></div>
+        <div class="chart-wrap"><canvas id="c-pm25"></canvas></div>
+      </div>
+
+      <div class="cc">
+        <div class="cc-title">CO <span class="cc-sub-inline">ppm &middot; rolling 20</span></div>
+        <div class="chart-wrap"><canvas id="c-co"></canvas></div>
+      </div>
+
+      <div class="cc">
+        <div class="cc-title">NO&sup2; <span class="cc-sub-inline">ppb &middot; rolling 20</span></div>
+        <div class="chart-wrap"><canvas id="c-no2"></canvas></div>
+      </div>
+
+      <div class="cc">
+        <div class="cc-title">Temp &amp; Humidity <span class="cc-sub-inline">current &middot; all nodes</span></div>
+        <div class="chart-wrap"><canvas id="c-th"></canvas></div>
+      </div>
+
+      <div class="cc">
+        <div class="cc-title">PM10 <span class="cc-sub-inline">&micro;g/m&sup3; &middot; current</span></div>
+        <div class="chart-wrap"><canvas id="c-pm10"></canvas></div>
+      </div>
+
+      <div class="cc">
+        <div class="cc-title">Wind Speed <span class="cc-sub-inline">m/s &middot; current</span></div>
+        <div class="chart-wrap"><canvas id="c-wind"></canvas></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══ PANEL 1 · MAP + ALERTS ═══════════════════════════════ -->
+  <section class="panel" role="tabpanel" aria-label="Map and Alerts">
+    <div class="panel-title">Map &amp; Alerts <span class="panel-story">Live AQI across Kathmandu Valley &mdash; click any marker</span></div>
+
+    <div class="p-row grow">
+
+      <!-- Map — 45% width, locked to KTM valley -->
+      <div class="cc map-col" style="padding:8px;display:flex;flex-direction:column;">
+        <div class="cc-title" style="margin-bottom:4px;flex-shrink:0">Node Locations &middot; Live AQI</div>
         <div id="aq-map"></div>
       </div>
-      <div class="cc">
-        <div class="cc-title">AQI Index Scale</div>
-        <div class="cc-sub">US EPA 2024 BREAKPOINTS</div>
-        <div class="scale-list">
-          <div class="scale-row"><div class="scale-dot" style="background:#00e599"></div>Good                  <span class="scale-range">0 – 50</span></div>
-          <div class="scale-row"><div class="scale-dot" style="background:#ffc947"></div>Moderate              <span class="scale-range">51 – 100</span></div>
-          <div class="scale-row"><div class="scale-dot" style="background:#ff8c42"></div>Unhealthy (Sensitive) <span class="scale-range">101 – 150</span></div>
-          <div class="scale-row"><div class="scale-dot" style="background:#ff4757"></div>Unhealthy             <span class="scale-range">151 – 200</span></div>
-          <div class="scale-row"><div class="scale-dot" style="background:#b44cff"></div>Very Unhealthy        <span class="scale-range">201 – 300</span></div>
-          <div class="scale-row"><div class="scale-dot" style="background:#7b1fa2"></div>Hazardous             <span class="scale-range">301 – 500</span></div>
+
+      <!-- Right sidebar -->
+      <div class="map-sidebar">
+
+        <!-- AQI scale legend -->
+        <div class="cc" style="flex-shrink:0">
+          <div class="cc-title">AQI Scale</div>
+          <div class="cc-sub">US EPA 2024 &middot; color + shape coded</div>
+          <div class="scale-list">
+            <div class="scale-row"><div class="scale-dot" style="background:#1a9c5a"></div>Good           <span class="scale-range">0&ndash;50</span></div>
+            <div class="scale-row"><div class="scale-dot" style="background:#c89a1a"></div>Moderate       <span class="scale-range">51&ndash;100</span></div>
+            <div class="scale-row"><div class="scale-dot" style="background:#d4641a"></div>Sensitive      <span class="scale-range">101&ndash;150</span></div>
+            <div class="scale-row"><div class="scale-dot" style="background:#c8383a"></div>Unhealthy      <span class="scale-range">151&ndash;200</span></div>
+            <div class="scale-row"><div class="scale-dot" style="background:#7c5cbf"></div>Very Unhealthy <span class="scale-range">201&ndash;300</span></div>
+            <div class="scale-row"><div class="scale-dot" style="background:#5a1a7a"></div>Hazardous      <span class="scale-range">301&ndash;500</span></div>
+          </div>
         </div>
-        <div style="margin-top:18px">
-          <div class="cc-title" style="font-size:12px;margin-bottom:4px">Current AQI by Node</div>
-          <div class="cc-sub" style="margin-bottom:12px">HORIZONTAL COMPARISON</div>
-          <canvas id="c-aqi-h" height="140"></canvas>
+
+        <!-- AQI horizontal bar -->
+        <div class="cc" style="flex-shrink:0;height:140px">
+          <div class="cc-title">AQI by Node <span class="cc-sub-inline">current comparison</span></div>
+          <div class="chart-wrap"><canvas id="c-aqi-h"></canvas></div>
         </div>
+
+        <!-- Health Risk bar -->
+        <div class="cc" style="flex-shrink:0;height:130px">
+          <div class="cc-title">Health Risk <span class="cc-sub-inline">composite 0&ndash;100</span></div>
+          <div class="chart-wrap"><canvas id="c-health"></canvas></div>
+        </div>
+
+        <!-- Alarm log -->
+        <div class="cc grow" style="padding:9px 10px">
+          <div class="cc-title">Alarm Log <span class="cc-sub-inline">AQI &gt; 100 triggers</span></div>
+          <div class="alarm-scroll" id="alarm-list" role="log" aria-live="polite">
+            <div class="empty">No alarms &mdash; all nodes normal</div>
+          </div>
+        </div>
+
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- PM2.5 SPARKLINES -->
-  <div>
-    <div class="sh"><span class="sh-label">PM2.5 Sparklines — Per Node</span><div class="sh-line"></div></div>
-    <div class="spark-row" id="spark-row"></div>
-  </div>
-
-  <!-- NODE CARDS -->
-  <div>
-    <div class="sh"><span class="sh-label">Node Telemetry</span><div class="sh-line"></div></div>
-    <div class="nodes" id="node-grid"></div>
-  </div>
-
-  <!-- PM2.5 TREND + TEMP/HUMIDITY -->
-  <div class="chart-row">
-    <div class="cc">
-      <div class="cc-title">PM2.5 Trend — All Nodes</div>
-      <div class="cc-sub">ROLLING 20 READINGS · µg/m³ · WHO LIMIT = 15 µg/m³</div>
-      <canvas id="c-pm25" height="180"></canvas>
-    </div>
-    <div class="cc">
-      <div class="cc-title">Temperature &amp; Humidity</div>
-      <div class="cc-sub">ALL NODES CURRENT READINGS</div>
-      <canvas id="c-th" height="180"></canvas>
-    </div>
-  </div>
-
-  <!-- CO + NO2 + HEALTH RISK -->
-  <div class="chart-row3">
-    <div class="cc">
-      <div class="cc-title">CO Trend — All Nodes</div>
-      <div class="cc-sub">CARBON MONOXIDE · ppm · ROLLING 20 READINGS</div>
-      <canvas id="c-co" height="180"></canvas>
-    </div>
-    <div class="cc">
-      <div class="cc-title">NO₂ Trend — All Nodes</div>
-      <div class="cc-sub">NITROGEN DIOXIDE · ppb · ROLLING 20 READINGS</div>
-      <canvas id="c-no2" height="180"></canvas>
-    </div>
-    <div class="cc">
-      <div class="cc-title">Health Risk Score</div>
-      <div class="cc-sub">COMPOSITE 0–100 · HIGHER = WORSE</div>
-      <canvas id="c-health" height="180"></canvas>
-    </div>
-  </div>
-
-  <!-- PM10 + WIND -->
-  <div class="chart-row2">
-    <div class="cc">
-      <div class="cc-title">PM10 Comparison</div>
-      <div class="cc-sub">COARSE PARTICULATE · µg/m³ · ALL NODES</div>
-      <canvas id="c-pm10" height="160"></canvas>
-    </div>
-    <div class="cc">
-      <div class="cc-title">Wind Speed</div>
-      <div class="cc-sub">m/s · ALL NODES CURRENT</div>
-      <canvas id="c-wind" height="160"></canvas>
-    </div>
-  </div>
-
-  <!-- ALARM LOG -->
-  <div>
-    <div class="sh"><span class="sh-label">Alarm &amp; Event Log</span><div class="sh-line"></div></div>
-    <div class="alarm-box">
-      <div class="alarm-scroll" id="alarm-list">
-        <div class="empty">No alarms — all nodes within normal range</div>
-      </div>
-    </div>
-  </div>
-
-</main>
+</div>
+</div>
 
 <footer>
-  <span>Kathmandu Valley Smart Air Quality Monitoring System · Group 15 · ITS67404 Internet of Things</span>
-  <span id="last-update">Last update: —</span>
+  <span>Kathmandu Valley Smart Air Quality Monitoring &middot; Group 15 &middot; ITS67404 IoT &middot; Taylor's University</span>
+  <span id="footer-panel">Panel 1 / 2</span>
 </footer>
 
 </div>
 
-<!-- Dashboard scripts (order matters — config must come first) -->
 <script src="js/config.js"></script>
 <script src="js/charts.js"></script>
 <script src="js/map.js"></script>
 <script src="js/ui.js"></script>
 <script src="js/app.js"></script>
+
+<script>
+(function() {
+  var total   = 2;
+  var current = 0;
+  var panels  = document.getElementById("panels");
+  var tabs    = document.querySelectorAll(".tab-btn");
+  var dots    = document.querySelectorAll(".step-dot");
+  var lbl     = document.getElementById("footer-panel");
+
+  function goTo(idx) {
+    if (idx < 0 || idx >= total) return;
+    current = idx;
+    panels.style.transform = "translateX(-" + (idx * 50) + "%)";
+    tabs.forEach(function(t, i) {
+      t.classList.toggle("active", i === idx);
+      t.setAttribute("aria-selected", i === idx ? "true" : "false");
+    });
+    dots.forEach(function(d, i) { d.classList.toggle("active", i === idx); });
+    lbl.textContent = "Panel " + (idx + 1) + " / " + total;
+    if (idx === 1 && window.map) setTimeout(function() { window.map.invalidateSize(); }, 80);
+  }
+
+  tabs.forEach(function(b) { b.addEventListener("click", function() { goTo(+b.dataset.panel); }); });
+  dots.forEach(function(d) { d.addEventListener("click", function() { goTo(+d.dataset.panel); }); });
+  document.getElementById("nav-prev").addEventListener("click", function() { goTo(current - 1); });
+  document.getElementById("nav-next").addEventListener("click", function() { goTo(current + 1); });
+  document.addEventListener("keydown", function(e) {
+    if (e.key === "ArrowRight") goTo(current + 1);
+    if (e.key === "ArrowLeft")  goTo(current - 1);
+  });
+  var tx = 0;
+  document.querySelector(".stage").addEventListener("touchstart", function(e) { tx = e.touches[0].clientX; }, { passive: true });
+  document.querySelector(".stage").addEventListener("touchend",   function(e) {
+    var dx = e.changedTouches[0].clientX - tx;
+    if (Math.abs(dx) > 48) goTo(dx < 0 ? current + 1 : current - 1);
+  }, { passive: true });
+  window.goToPanel = goTo;
+})();
+</script>
 </body>
 </html>

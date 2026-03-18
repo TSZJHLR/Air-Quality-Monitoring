@@ -1,11 +1,10 @@
 // app.js — fetch loop and page startup
 
-var fetchTimer  = null;
-var isFetching  = false;
-var lastGood    = {};   // keeps the most recent good data per node as a fallback
+var fetchTimer = null;
+var isFetching = false;
+var lastGood   = {};
 
 // ── FETCH ─────────────────────────────────────────────────────────────────────
-
 function fetchAll() {
   if (isFetching) return;
   isFetching = true;
@@ -30,7 +29,6 @@ function fetchAll() {
       return;
     }
 
-    // Build an ordered array aligned with NODES; fall back to last known good data
     var all = [];
     for (var i = 0; i < NODES.length; i++) {
       var id    = NODES[i].id;
@@ -48,7 +46,7 @@ function fetchAll() {
       }
     }
 
-    var live  = 0, stale = 0;
+    var live = 0, stale = 0;
     for (var i = 0; i < all.length; i++) {
       if (all[i]._ok && !all[i]._stale) live++;
       if (all[i]._stale) stale++;
@@ -60,7 +58,6 @@ function fetchAll() {
       showMsg("✓ " + live + "/5 nodes online", "ok");
     }
 
-    // Push data into every UI component
     for (var i = 0; i < all.length; i++) {
       if (all[i]._ok || all[i]._stale) {
         updateCard(NODES[i], all[i]);
@@ -92,7 +89,6 @@ function fetchAll() {
 }
 
 // ── CONNECT / STOP ────────────────────────────────────────────────────────────
-
 function startFetch() {
   stopFetch();
   var rate = parseInt(document.getElementById("interval").value);
@@ -119,20 +115,16 @@ function showMsg(text, cls) {
 }
 
 // ── STARTUP ───────────────────────────────────────────────────────────────────
-
 window.onload = function() {
-  buildGauges();
-  buildSparks();
-  buildCards();
+  initThemeToggle();
+  buildKPIs();
   initCharts();
   initMap();
   startClock();
 
-  // Restore persisted history so charts aren't empty on reload
   loadHistory();
   seedLineCharts();
 
-  // Restore last snapshot immediately so cards show data right away
   var snap = loadSnapshot();
   if (snap) {
     for (var i = 0; i < snap.length; i++) {
@@ -143,11 +135,9 @@ window.onload = function() {
     updateTicker(snap);
   }
 
-  // Restore the interval selector
   var savedRate = localStorage.getItem("aq_interval");
   if (savedRate) document.getElementById("interval").value = savedRate;
 
-  // Auto-reconnect if the tab was refreshed while connected
   if (localStorage.getItem("aq_connected") === "1") {
     showMsg("Reconnecting ...", "");
     startFetch();
