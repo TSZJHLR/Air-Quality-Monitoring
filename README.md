@@ -1,7 +1,5 @@
 <h1>Kathmandu Valley Smart Air Quality Monitoring System</h1>
 
-<p>Group 15  |  ITS67404 Internet of Things</p>
-
 <hr>
 
 <h2>Overview</h2>
